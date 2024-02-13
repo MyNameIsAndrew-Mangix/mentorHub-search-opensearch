@@ -1,0 +1,12 @@
+{
+    "mappings": {
+        "properties": {
+            "name": {
+                "type": "keyword"
+            },
+            "collection": {
+                "type": "keyword"
+            }
+        }
+      }
+  }
