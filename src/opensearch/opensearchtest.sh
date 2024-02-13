@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATA_FILE=""
-INDEX_NAME=${1:-'your_index_name'}
+INDEX_NAME=${1:-'search-index'}
 
 while getopts ":p:g:d:a:lmh" opt; do
   case $opt in
