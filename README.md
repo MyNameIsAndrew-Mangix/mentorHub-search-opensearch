@@ -17,6 +17,10 @@ cd ./src/ingest
 npm install
 node build/ingest.js
 ```
+### Customize configuration
+
+See [Tsconfig Reference](https://www.typescriptlang.org/tsconfig)
+
 ## Contributing
 
 The typescript files found in `./src/ingest/` are used to grab test data from a local instance of the [mongodb container](https://github.com/agile-learning-institute/mentorHub-mongodb/tree/main?tab=readme-ov-file) and perform the necessary data transformations before indexing the test data. There is a CLI tool at```./src/opensearch/opensearch-test.sh``` that can be used to run various tests on your opensearch container. Feel free to add on to it if you'd like, just follow the conventions.
