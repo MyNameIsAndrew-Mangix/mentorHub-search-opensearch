@@ -1,20 +1,22 @@
 import { Client } from "@opensearch-project/opensearch";
-import { Console } from "console";
-import fs from "fs";
+const fs = require("fs");
 
 const host: string | undefined = process.env.HOST;
 const protocol: string | undefined = process.env.PROTOCOL;
 const port: string | undefined = process.env.PORT;
 const auth: string | undefined = process.env.AUTH;
+const indexName: string | undefined = process.env.OPENSEARCH_INDEX;
 
 
 async function main()
 {
+    if (indexName === undefined) {
+        throw new Error("indexName is undefined");
+    }
     const opensearchClient: Client = new Client({
         node: protocol + "://" + auth + "@" + host + ":" + port
     });
 
-    const indexName: string = 'search-index';
     const mappingPath: string = 'mapping.json';
     const testDataPath: string = 'test-data.json';
 
@@ -93,22 +95,25 @@ async function main()
 
     async function verifyAndCreateIndex()
     {
-        // Check if index exists
-        console.log("Verifying if index exists or needs to be created...");
-        const indexExists = await opensearchClient.indices.exists({
-            index: indexName
-        });
-        // The index exists API operation returns only one of two possible response codes: 200 – the index exists, and 404 – the index does not exist.
-        // So we can check if statusCode === 404 with no edge cases
-        if (indexExists.statusCode === 404) {
-            console.log(`Index of ${indexName} doesn't exist, creating index`);
-            opensearchClient.indices.create({
+        if (typeof indexName === "string") {
+            // Check if index exists
+            console.log("Verifying if index exists or needs to be created...");
+            const indexExists = await opensearchClient.indices.exists({
                 index: indexName
             });
+            // The index exists API operation returns only one of two possible response codes: 200 – the index exists, and 404 – the index does not exist.
+            // So we can check if statusCode === 404 with no edge cases
+            if (indexExists.statusCode === 404) {
+                console.log(`Index of ${indexName} doesn't exist, creating index`);
+                await opensearchClient.indices.create({
+                    index: indexName
+                });
+            }
+            else {
+                console.log(`Index ${indexName} exists!`);
+            }
         }
-        else {
-            console.log(`Index ${indexName} exists!`);
-        }
+
     }
 
     async function testConnection()
