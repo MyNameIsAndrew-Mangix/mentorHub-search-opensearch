@@ -50,12 +50,20 @@ async function main()
         const response = await opensearchClient.bulk({
             index: indexName,
             body: transformedTestData.flatMap((doc: any) => [
-                { index: { _index: indexName, _id: doc._id } },
+                { index: { _index: indexName } },
                 doc,
             ])
         });
-        if (response.statusCode === 200) {
+
+        if (!response.body.errors) {
             console.log("Successfully indexed test data!");
+        }
+        else {
+            console.error("Errors occured during indexing");
+            response.body.items.forEach((item: any, index: any) =>
+            {
+                console.error(`Item ${index + 1} details:`, item);
+            });
         }
     }
 
@@ -64,13 +72,8 @@ async function main()
         console.log("Transforming test data before indexing...");
         return testData.map((doc: any) =>
         {
-            Object.keys(doc).forEach((key) =>
-            {
-                if (typeof doc[key] === 'object' && doc[key].$oid) {
-                    doc[key] = doc[key].$oid;
-                }
-            });
-            return doc;
+            const { _id, ...transformedDoc } = doc;
+            return transformedDoc;
         });
     }
 
