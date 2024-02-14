@@ -16,10 +16,9 @@ export OPENSEARCH_INDEX=search-index
 export SCRIPT_PATH=migrate.js
 export LOAD_TEST=true
 
-#  sleep for 10 seconds; this is to ensure that the opensearch container is up and running before the script is executed
-sleep 5
+#  sleep for 30 seconds; this is to ensure that the opensearch container is up and running before the script is executed
+sleep 30
 
 # build # run the following script
 npx tsc migrate.ts
 node build/migrate.js
-
