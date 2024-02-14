@@ -20,5 +20,5 @@ export LOAD_TEST=true
 sleep 30
 
 # build # run the following script
-npx tsc migrate.ts
+npx tsc
 node build/migrate.js
