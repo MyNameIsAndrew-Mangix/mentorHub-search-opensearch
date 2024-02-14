@@ -1,0 +1,25 @@
+# forcefully removes any existing container named test-opensearch
+docker rm -f test-opensearch
+# starts a new docker container named test-opensearch with the following environment variables
+# --detach runs the container in the background
+#plugs.security.disabled=true allows us to test using http
+docker run -e discovery.type=single-node -e cluser.name=mentorHub -e plugins.security.disabled=true -p 9200:9200 --name test-opensearch --detach opensearchproject/opensearch:latest
+
+# export the following environment variables
+export PROTOCOL=http
+export HOST=localhost
+export USER=root
+export PASSWORD=example
+export AUTH=admin:admin
+export PORT=9200
+export OPENSEARCH_INDEX=search-index
+export SCRIPT_PATH=migrate.js
+export LOAD_TEST=true
+
+#  sleep for 10 seconds; this is to ensure that the opensearch container is up and running before the script is executed
+sleep 5
+
+# build # run the following script
+npx tsc migrate.ts
+node build/migrate.js
+

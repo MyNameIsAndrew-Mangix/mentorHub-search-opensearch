@@ -2,10 +2,10 @@ import { Client } from "@opensearch-project/opensearch";
 import { Console } from "console";
 import fs from "fs";
 
-const host: string = 'localhost';
-const protocol: string = 'http';
-const port: number = 9200;
-const auth: string = "admin:admin";
+const host: string | undefined = process.env.HOST;
+const protocol: string | undefined = process.env.PROTOCOL;
+const port: string | undefined = process.env.PORT;
+const auth: string | undefined = process.env.AUTH;
 
 
 async function main()
