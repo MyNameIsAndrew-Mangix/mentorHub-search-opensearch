@@ -1,0 +1,163 @@
+[
+    {
+        "_id": {
+            "$oid": "bbbb00000000000000000000"
+        },
+        "name": "Junior Jobs",
+        "status": "Active"
+
+    },
+    {
+        "_id": {
+            "$oid": "bbbb00000000000000000001"
+        },
+        "name": "Enok",
+        "status": "Pending"
+    },
+    {
+        "_id": {
+            "$oid": "bbbb00000000000000000002"
+        },
+        "name": "Google Search",
+        "status": "Active",
+        "description": "Members that found us on Google"
+    }, {
+        "_id": {
+          "$oid": "aaaa00000000000000000000"
+        },
+        "name": "James Smith",
+        "status": "Pending",
+        "member": true,
+        "mentor": false,
+        "donor": false,
+        "contact": false,
+        "mentorName": "Michael Smith",
+        "partnerId": {
+          "$oid": "bbbb00000000000000000007"
+        },
+        "title": "Apprentice",
+        "eMail": "JamesSmith@fakemail.com",
+        "gitHub": "JamesSmith",
+        "device": "Mac Intel",
+        "location": "GVL SC",
+        "phone": "449-882-6722",
+        "description": "She was too busy always talking about what she wanted to do to actually do any of it.",
+        "lastSaved": {
+          "fromIp": "97.56.222.85",
+          "byUser": "d3dabeb0-6b81-11ee-b962-0242ac120002",
+          "atTime": "4/8/1975 14:40:15",
+          "correlationId": "6baff06e-3be9-4f6d-888c-0777c80a0548"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "aaaa00000000000000000001"
+        },
+        "name": "Michael Smith",
+        "status": "Active",
+        "member": true,
+        "mentor": false,
+        "donor": false,
+        "contact": false,
+        "mentorName": "Olivia Jones",
+        "partnerId": {
+          "$oid": "bbbb00000000000000000005"
+        },
+        "title": "Apprentice",
+        "eMail": "MichaelSmith@fakemail.com",
+        "gitHub": "MichaelSmith",
+        "device": "Mac Apple",
+        "location": "Milford Deleware",
+        "phone": "875-959-5595",
+        "description": "Malls are great places to shop; I can find everything I need under one roof.",
+        "lastSaved": {
+          "fromIp": "7.207.213.107",
+          "byUser": "d3dac1b2-6b81-11ee-b962-0242ac120002",
+          "atTime": "5/2/2023 18:51:03",
+          "correlationId": "a47810bc-2a19-489a-9c90-8868b2fd3cb6"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "aaaa00000000000000000002"
+        },
+        "name": "Thomas Smith",
+        "status": "Archived",
+        "member": true,
+        "mentor": false,
+        "donor": true,
+        "contact": false,
+        "mentorName": "Jacob Brown",
+        "partnerId": {
+          "$oid": "bbbb00000000000000000005"
+        },
+        "title": "Resident",
+        "eMail": "ThomasSmith@fakemail.com",
+        "gitHub": "ThomasSmith",
+        "device": "Windows / WSL",
+        "location": "Asheville",
+        "phone": "205-948-6013",
+        "description": "He didn't understand why the bird wanted to ride the bicycle.",
+        "lastSaved": {
+          "fromIp": "24.62.204.82",
+          "byUser": "d3dac34c-6b81-11ee-b962-0242ac120002",
+          "atTime": "5/23/2010 12:21:05",
+          "correlationId": "7f52c14d-9e89-459b-b122-769c66e287a2"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "aaaa00000000000000000003"
+        },
+        "name": "Emily Smith",
+        "status": "Inactive",
+        "member": true,
+        "mentor": false,
+        "donor": true,
+        "contact": true,
+        "mentorName": "Abigail Evans",
+        "partnerId": {
+          "$oid": "bbbb00000000000000000005"
+        },
+        "title": "Distinguished",
+        "eMail": "EmilySmith@fakemail.com",
+        "gitHub": "EmilySmith",
+        "device": "Linux",
+        "location": "",
+        "phone": "246-906-8608",
+        "description": "There is no better feeling than staring at a wall with closed eyes.",
+        "lastSaved": {
+          "fromIp": "84.251.150.26",
+          "byUser": "d3dac496-6b81-11ee-b962-0242ac120002",
+          "atTime": "6/12/2010 16:23:03",
+          "correlationId": "9f5bc046-f22f-4e27-95f9-6f66fbd43cad"
+        }
+      },
+      {
+        "_id": {
+          "$oid": "aaaa00000000000000000004"
+        },
+        "name": "Elizabeth Smith",
+        "status": "Pending",
+        "member": false,
+        "mentor": false,
+        "donor": true,
+        "contact": true,
+        "mentorName": "",
+        "partnerId": {
+          "$oid": "bbbb00000000000000000007"
+        },
+        "eMail": "ElizabethSmith@fakemail.com",
+        "gitHub": "ElizabethSmith",
+        "device": "Mac Intel",
+        "location": "Colombia",
+        "phone": "343-998-6637",
+        "description": "They wandered into a strange Tiki bar on the edge of the small beach town.",
+        "lastSaved": {
+          "fromIp": "171.83.79.187",
+          "byUser": "d3dac5b8-6b81-11ee-b962-0242ac120002",
+          "atTime": "10/1/1996 19:27:16",
+          "correlationId": "43e0061e-f714-4198-a87f-f34bc8177dd3"
+        }
+      }
+    ]
