@@ -42,10 +42,10 @@ async function main()
     {
 
         const testData = JSON.parse(fs.readFileSync(testDataPath, 'utf8'));
-        //do necessary transformations on test data
+        // Do necessary transformations on test data
         const transformedTestData = transformData(testData);
 
-        //index the data
+        // Index the data
         console.log("Attemping to index test data...");
         const response = await opensearchClient.bulk({
             index: indexName,
@@ -59,6 +59,8 @@ async function main()
             console.log("Successfully indexed test data!");
         }
         else {
+            // Bulk sends a 200 if it reaches the server. 
+            // Each document has their own status code, so we need to cycle through if there are errors in the body
             console.error("Errors occured during indexing");
             response.body.items.forEach((item: any, index: any) =>
             {
@@ -72,6 +74,7 @@ async function main()
         console.log("Transforming test data before indexing...");
         return testData.map((doc: any) =>
         {
+            // Remove the _id field from the data. Opensearch doesn't like it.
             const { _id, ...transformedDoc } = doc;
             return transformedDoc;
         });
