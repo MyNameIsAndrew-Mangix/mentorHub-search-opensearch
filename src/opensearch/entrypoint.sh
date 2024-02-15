@@ -1,2 +1,2 @@
 #!/bin/bash
-npx tsc
+node build/migrate.js
