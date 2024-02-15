@@ -1,2 +1,2 @@
 #!/bin/bash
-node build/migrate.js
+node dist/migrate.js

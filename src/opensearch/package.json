@@ -1,9 +1,10 @@
 {
   "dependencies": {
-    "@opensearch-project/opensearch": "^2.5.0",
-    "typescript": "^5.3.3"
+    "@opensearch-project/opensearch": "^2.5.0"
+
   },
   "devDependencies": {
+    "typescript": "^5.3.3",
     "@types/node": "^20.11.17"
   }
 }
