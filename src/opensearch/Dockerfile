@@ -9,8 +9,8 @@ WORKDIR /app
 COPY package*.json .
 RUN npm install
 
-#Copy entrypoint.sh
-COPY entrypoint.sh ./dist/
+#Copy entrypoint.sh, mapping, and test data
+COPY entrypoint.sh mapping.json test-data.json ./dist/
 
 # Build distribution
 COPY migrate.ts tsconfig.json ./
@@ -22,15 +22,15 @@ RUN DATE=$(date) && \
 
 # Stage 2: run the app in a lightweight image
 #FROM node:18-alpine as deploy
-WORKDIR /dist
+WORKDIR /app/dist
 COPY /dist .
 
 #Set default ENV values
 ENV PROTOCOL=http
-ENV HOST=localhost
+ENV HOST=172.17.0.2
 ENV AUTH=admin:admin
 ENV PORT=9200
 ENV OPENSEARCH_INDEX=search-index
 ENV LOAD_TEST=true
 
-ENTRYPOINT [ "./entrypoint.sh" ]
+ENTRYPOINT [ "/app/dist/entrypoint.sh" ]
