@@ -8,17 +8,13 @@ docker run -e discovery.type=single-node -e cluster.name=mentorHub -e plugins.se
 # export the following environment variables
 export PROTOCOL=http
 export HOST=localhost
-export USER=root
-export PASSWORD=example
 export AUTH=admin:admin
 export PORT=9200
 export OPENSEARCH_INDEX=search-index
-export SCRIPT_PATH=migrate.js
 export LOAD_TEST=true
 
 #  sleep for 30 seconds; this is to ensure that the opensearch container is up and running before the script is executed
 sleep 30
 
 # build # run the following script
-npx tsc
-node build/migrate.js
+./entrypoint.sh
