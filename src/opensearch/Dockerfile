@@ -6,26 +6,24 @@ RUN apt-get update && apt-get install -y git
 
 # Install dependencies
 WORKDIR /app
-COPY package*.json ./
+COPY package*.json .
 RUN npm install
 
 #Copy entrypoint.sh
 COPY entrypoint.sh ./dist/
 
 # Build distribution
-COPY . .
+COPY migrate.ts tsconfig.json ./
 RUN npx tsc
 
 #Get branch and patch level, then create VERSION.txt file
-RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \
-    PATCH=$(git rev-parse HEAD) && \
-    DATE=$(date) && \
+RUN DATE=$(date) && \
     echo $DATE.$BRANCH.$PATCH > ./dist/VERSION.txt
 
 # Stage 2: run the app in a lightweight image
-FROM node:18-alpine as deploy
+#FROM node:18-alpine as deploy
 WORKDIR /dist
-COPY --from=build /app/dist .
+COPY ./app/dist .
 
 #Set default ENV values
 ENV PROTOCOL=http
