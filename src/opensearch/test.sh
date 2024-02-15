@@ -13,9 +13,9 @@ export PORT=9200
 export OPENSEARCH_INDEX=search-index
 export LOAD_TEST=true
 
-#  sleep for 30 seconds; this is to ensure that the opensearch container is up and running before the script is executed
-sleep 30
+#  sleep for 15 seconds; this is to ensure that the opensearch container is up and running before the script is executed, adjust as needed
+sleep 15
 
 # build # run the following script
-npx tsc
+npx tsc -p tsconfig.json
 ./entrypoint.sh
