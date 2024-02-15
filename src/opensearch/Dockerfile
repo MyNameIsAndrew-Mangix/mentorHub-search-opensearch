@@ -23,7 +23,7 @@ RUN DATE=$(date) && \
 # Stage 2: run the app in a lightweight image
 #FROM node:18-alpine as deploy
 WORKDIR /dist
-COPY ./app/dist .
+COPY /dist .
 
 #Set default ENV values
 ENV PROTOCOL=http
