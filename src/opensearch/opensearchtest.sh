@@ -3,7 +3,7 @@
 DATA_FILE=""
 INDEX_NAME=${1:-'search-index'}
 
-while getopts ":p:g:d:a:lmh" opt; do
+while getopts ":p:gd:a:lmh" opt; do
   case $opt in
     p)
       # Testing POST
@@ -25,14 +25,9 @@ while getopts ":p:g:d:a:lmh" opt; do
       ;;
     g)
       # Testing GET
-       if [ -z "$OPTARG" ]; then
-        INDEX_ARG="_all"
-      else
-        INDEX_ARG="$OPTARG"
-      fi
-      echo "-=-=-=-=-=TESTING GET-=-=-=-=-="
+        INDEX_NAME="$OPTARG"
       echo ""
-      curl -u admin:admin -k -XGET "http://localhost:9200/$INDEX_ARG/_search" -H "Content-Type: application/json" -d '{
+      curl -u admin:admin -k -XGET "http://localhost:9200/$INDEX_NAME/_search" -H "Content-Type: application/json" -d '{
           "query": {
               "match_all": {}
           }
@@ -77,13 +72,13 @@ while getopts ":p:g:d:a:lmh" opt; do
       m)
       # Retrieving mappings
        if [ -z "$OPTARG" ]; then
-        INDEX_ARG="_all"
+        INDEX_NAME="_all"
       else
-        INDEX_ARG="$OPTARG"
+        INDEX_NAME="$OPTARG"
       fi
       echo "-=-=-=-=-=RETRIEVING MAPPINGS-=-=-=-=-="
       echo ""
-      curl -u admin:admin -k -XGET "http://localhost:9200/$INDEX_ARG/_mapping" -H "Content-Type: application/json"
+      curl -u admin:admin -k -XGET "http://localhost:9200/$INDEX_NAME/_mapping" -H "Content-Type: application/json"
       echo ""
       ;;
     h)
