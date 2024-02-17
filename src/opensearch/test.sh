@@ -18,4 +18,8 @@ sleep 15
 
 # build # run the following script
 npx tsc -p tsconfig.json
+cp ./src/opensearch/entrypoint.sh ./dist/
+cp ./src/opensearch/mapping.json ./dist/
+cp ./src/opensearch/test-data.json ./dist/
+cd dist
 ./entrypoint.sh
