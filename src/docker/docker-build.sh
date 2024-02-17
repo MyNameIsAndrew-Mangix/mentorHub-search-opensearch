@@ -10,3 +10,4 @@ fi
 # Run the containers
 # curl https://raw.githubusercontent.com/agile-learning-institute/mentorhub/main/docker-compose/<<run-local-TODO:.sh | /bin/bash
 docker run -e discovery.type=single-node -e cluster.name=mentorHub -e plugins.security.disabled=true -p 9200:9200 --name test-opensearch --detach opensearchproject/opensearch:latest
+docker run ghcr.io/agile-learning-institute/mentorhub-search-opensearch:latest

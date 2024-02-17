@@ -36,4 +36,4 @@ ENV PORT=9200
 ENV OPENSEARCH_INDEX=search-index
 ENV LOAD_TEST=true
 
-ENTRYPOINT ["/bin/sh", "-c", "cd /app && pwd && node ./migrate.js"]
+ENTRYPOINT ["/bin/sh", "-c", "node ./migrate.js"]
