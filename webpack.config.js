@@ -4,7 +4,7 @@ const webpack = require("webpack")
 
 module.exports = {
     mode: 'production',
-  entry: './dist/migrate.js',
+  entry: './build/migrate.js',
   target: 'node',
   output: {
     filename: 'bundle.js',
