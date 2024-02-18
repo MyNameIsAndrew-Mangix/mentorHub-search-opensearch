@@ -37,12 +37,4 @@ COPY --from=build /app/src/opensearch/entrypoint.sh .
 COPY --from=build /app/src/opensearch/mapping.json .
 COPY --from=build /app/src/opensearch/test-data.json .
 
-ENV PROTOCOL=$PROTOCOL
-ENV HOST=$HOST
-ENV AUTH=$AUTH
-ENV PORT=$PORT
-ENV OPENSEARCH_INDEX=$OPENSEARCH_INDEX
-ENV LOAD_TEST=$LOAD_TEST
-
-
 CMD ["/bin/bash", "-c", "node ./bundle.js"]
