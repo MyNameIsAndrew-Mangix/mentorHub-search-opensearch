@@ -12,6 +12,9 @@ RUN npm install
 COPY . .
 RUN npx tsc
 
+RUN rm -r node_modules
+RUN npm install --production
+
 # Get branch and patch level, then create VERSION.txt file - This won't work till we change npm root.
 RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \
     PATCH=$(git rev-parse HEAD) && \
@@ -27,6 +30,7 @@ COPY --from=build /app/dist .
 COPY --from=build /app/src/opensearch/entrypoint.sh .
 COPY --from=build /app/src/opensearch/mapping.json .
 COPY --from=build /app/src/opensearch/test-data.json .
+COPY --from=build /app/node_modules ./node_modules
 
 # Set default ENV values
 ENV PROTOCOL=http
