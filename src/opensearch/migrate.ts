@@ -10,9 +10,6 @@ const indexName: string | undefined = process.env.OPENSEARCH_INDEX;
 
 async function main()
 {
-    if (indexName === undefined) {
-        throw new Error("indexName is undefined");
-    }
     const opensearchClient: Client = new Client({
         node: protocol + "://" + auth + "@" + host + ":" + port
     });
