@@ -3,7 +3,7 @@ const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const webpack = require("webpack")
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
   entry: './dist/migrate.js',
   target: 'node',
   output: {
