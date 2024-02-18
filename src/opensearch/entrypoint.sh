@@ -1,2 +1,2 @@
 #!/bin/bash
-node migrate.js
+node bundle.js

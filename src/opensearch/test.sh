@@ -17,7 +17,7 @@ export LOAD_TEST=true
 sleep 15
 
 # build # run the following script
-npx tsc -p tsconfig.json
+npm run build
 cp ./src/opensearch/entrypoint.sh ./dist/
 cp ./src/opensearch/mapping.json ./dist/
 cp ./src/opensearch/test-data.json ./dist/
