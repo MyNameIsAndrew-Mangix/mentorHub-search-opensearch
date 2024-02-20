@@ -10,20 +10,19 @@ COPY package*.json .
 RUN npm install
 
 COPY . .
-COPY  /app/src/opensearch/entrypoint.sh ./dist
-COPY  /app/src/opensearch/mapping.json ./dist
+COPY ./src/opensearch/entrypoint.sh ./dist
+COPY ./src/opensearch/mapping.json ./dist
 COPY ./src/opensearch/test-data.json ./dist
-
 
 RUN npm run build
 
-# Get branch and patch level, then create VERSION.txt file - This won't work till we change npm root.
+# Get branch and patch level, then create VERSION.txt file
 RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \
     PATCH=$(git rev-parse HEAD) && \
     DATE=$(date) && \
     echo $DATE.$BRANCH.$PATCH > ./dist/VERSION.txt
 
-# Stage 2: run the app in a lightweight image
+# Stage 2: Run the app in a lightweight image
 FROM node:18 as deploy
 
 # Set default ENV values
@@ -34,7 +33,7 @@ ENV PORT=9200
 ENV OPENSEARCH_INDEX=search-index
 ENV LOAD_TEST=true
 
-# Copy files from Buld
+# Copy files from build
 WORKDIR /app
 
 COPY --from=build /app/dist .
