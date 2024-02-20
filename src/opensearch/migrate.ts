@@ -1,15 +1,17 @@
 import { Client } from "@opensearch-project/opensearch";
 const fs = require("fs");
 
-const host: string | undefined = process.env.HOST;
-const protocol: string | undefined = process.env.PROTOCOL;
-const port: string | undefined = process.env.PORT;
-const auth: string | undefined = process.env.AUTH;
-const indexName: string | undefined = process.env.OPENSEARCH_INDEX;
+const host: string = process.env.HOST!;
+const protocol: string = process.env.PROTOCOL!;
+const port: string = process.env.PORT!;
+const auth: string = process.env.AUTH!;
+const indexName: string = process.env.OPENSEARCH_INDEX!;
 
 
 async function main()
 {
+    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName);
+    console.log("Creating OpenSearch Client with Node:", protocol + "://" + auth + "@" + host + ":" + port);
     const opensearchClient: Client = new Client({
         node: protocol + "://" + auth + "@" + host + ":" + port
     });
