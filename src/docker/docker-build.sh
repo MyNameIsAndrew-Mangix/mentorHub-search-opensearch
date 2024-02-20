@@ -13,8 +13,4 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Run the containers
-# curl https://raw.githubusercontent.com/agile-learning-institute/mentorhub/main/docker-compose/<<run-local-TODO:.sh | /bin/bash
-docker run -e discovery.type=single-node -e cluster.name=mentorHub -e plugins.security.disabled=true -p 9200:9200 --name mentorhub-opensearch-1 --detach opensearchproject/opensearch:latest
-sleep 15 # Ensure the opensearch container is open
-docker run --name mentorhub-opensearch-indexer-1 ghcr.io/agile-learning-institute/mentorhub-search-opensearch:latest 
+mh up search-db
