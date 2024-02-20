@@ -62,6 +62,7 @@ async function main()
             response.body.items.forEach((item: any, index: any) =>
             {
                 console.error(`Item ${index + 1} details:`, item);
+                console.error("Caused By:", item.index.error.caused_by);
             });
         }
     }
@@ -71,9 +72,9 @@ async function main()
         console.log("Transforming test data before indexing...");
         return testData.map((doc: any) =>
         {
-            // Remove the _id field from the data. Opensearch doesn't like it.
+            //Opensearch doesn't like the source having an _id field, so we rename it. Eventually it will be along the lines of collectionNameId
             const { _id, ...transformedDoc } = doc;
-            return transformedDoc;
+            return { ...transformedDoc, 'ID': _id };
         });
     }
 
