@@ -1,18 +1,17 @@
 import { Client } from "@opensearch-project/opensearch";
 const fs = require("fs");
 
-const host: string | undefined = process.env.HOST;
-const protocol: string | undefined = process.env.PROTOCOL;
-const port: string | undefined = process.env.PORT;
-const auth: string | undefined = process.env.AUTH;
-const indexName: string | undefined = process.env.OPENSEARCH_INDEX;
+const host: string = process.env.HOST!;
+const protocol: string = process.env.PROTOCOL!;
+const port: string = process.env.PORT!;
+const auth: string = process.env.AUTH!;
+const indexName: string = process.env.OPENSEARCH_INDEX!;
 
 
 async function main()
 {
-    if (indexName === undefined) {
-        throw new Error("indexName is undefined");
-    }
+    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName);
+    console.log("Creating OpenSearch Client with Node:", protocol + "://" + auth + "@" + host + ":" + port);
     const opensearchClient: Client = new Client({
         node: protocol + "://" + auth + "@" + host + ":" + port
     });
@@ -65,6 +64,7 @@ async function main()
             response.body.items.forEach((item: any, index: any) =>
             {
                 console.error(`Item ${index + 1} details:`, item);
+                console.error("Caused By:", item.index.error.caused_by);
             });
         }
     }
@@ -74,9 +74,9 @@ async function main()
         console.log("Transforming test data before indexing...");
         return testData.map((doc: any) =>
         {
-            // Remove the _id field from the data. Opensearch doesn't like it.
+            //Opensearch doesn't like the source having an _id field, so we rename it. Eventually it will be along the lines of collectionNameId
             const { _id, ...transformedDoc } = doc;
-            return transformedDoc;
+            return { ...transformedDoc, 'ID': _id };
         });
     }
 

@@ -1,3 +1,4 @@
 *.DS_Store
-src/opensearch/node_modules
-src/opensearch/build
+node_modules
+dist
+build
