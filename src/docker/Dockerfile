@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y git
 WORKDIR /app
 COPY package*.json .
 RUN npm install
-
+RUN mkdir dist
 COPY . .
 COPY ./src/searchinit/entrypoint.sh ./dist
 COPY ./src/searchinit/mapping.json ./dist
