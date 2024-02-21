@@ -1,3 +1,8 @@
+if !([[ -d "./src/docker" ]] && [[ -d "./src/opensearch" ]]); then 
+    echo "This script must be run from the repository root folder"
+    exit 1
+fi
+
 mh down
 # starts a new docker container named test-opensearch with the following environment variables
 # --detach runs the container in the background
