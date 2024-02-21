@@ -9,28 +9,28 @@ This is repository contains database configuration and test data used by the sea
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ### Optionally
-- [NodeJS and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) - to build and run the data ingestion script
+- [MentorHub Developer Edition](https://github.com/agile-learning-institute/mentorHub/tree/main/mentorHub-developer-edition) - to easily run the containers locally
+- [NodeJS and NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) - to build and run the data ingestion script locally
 
-## Build and Run the Ingest Script
-```bash
-cd ./src/ingest
-npm install
-node build/ingest.js
-```
 ### Customize configuration
 
 See [Tsconfig Reference](https://www.typescriptlang.org/tsconfig)
 
 ## Contributing
 
-The typescript files found in `./src/ingest/` are used to grab test data from a local instance of the [mongodb container](https://github.com/agile-learning-institute/mentorHub-mongodb/tree/main?tab=readme-ov-file) and perform the necessary data transformations before indexing the test data. There is a CLI tool at```./src/opensearch/opensearch-test.sh``` that can be used to run various tests on your opensearch container. Feel free to add on to it if you'd like, just follow the conventions.
+The typescript files found in `./src/opensearch/` are used to grab test data from a `test-data.json` and perform the necessary data transformations before indexing the test data. There is a CLI tool at```./src/opensearch/opensearch-test.sh``` that can be used to run various tests on your opensearch container.
 
 You should do all work in a feature branch, and when you are ready to have your code deployed to the cloud open a pull request against that feature branch. Do not open a pull request without first building and testing the containers locally.
 
+## Testing changes locally
+Run this from the project root directory (`mentorhub-search-opensearch`). This command creates an opensearch container then builds, bundles, and tests migrate.ts This is what you will use to test changes locally.
+```bash
+./src/opensearch/localtest.sh
+```
 
 ## Build and test the container
 
-Use the following command to build and run the container locally. See [here for details](https://github.com/agile-learning-institute/mentorhub/blob/main/docker-compose/README.md) on how to stop/start the database.
+Use the following command to build and run the container locally. See [here for details](https://github.com/agile-learning-institute/mentorHub/tree/main/mentorHub-developer-edition) on how to stop/start mentorhub containers.
 
 ```bash
 ./src/docker/docker-build.sh
@@ -43,11 +43,13 @@ After that command completes successfully you can verify it worked successfully 
 ```
 
 If you don't get a response, you can follow [this guide](https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/) to troubleshoot.
-With a working container, you can make use of 
+With a working container, you can make use of these tools
 ```bash
-../src/opensearch/opensearchtest.sh
+./src/opensearch/localtest.sh
+./src/opensearch/opensearchtest.sh
 ```
 
 ## Refactors and Enhancements
 
-- [ ] To Be Documented
+- [ ] Improve file structure/naming scheme
+- [ ] Improve functionality and usefulness of `opensearchtest.sh`
