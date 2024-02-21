@@ -1,4 +1,4 @@
-if !([[ -d "./src/docker" ]] && [[ -d "./src/opensearch" ]]); then 
+if !([[ -d "./src/docker" ]] && [[ -d "./src/searchinit" ]]); then 
     echo "This script must be run from the repository root folder"
     exit 1
 fi
