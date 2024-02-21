@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     mode: 'production',
-  entry: './src/opensearch/migrate.ts',
+  entry: './src/searchinit/migrate.ts',
   target: 'node',
   output: {
     filename: 'bundle.js',

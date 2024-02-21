@@ -1,6 +1,6 @@
 # mentorhub-search-opensearch
 
-This is repository contains database configuration and test data used by the search system, Opensearch. The Dockerfile creates an opensearch database instance that exposes the REST API service port and runs a script to initialize the index and mapping scripts to load test data.
+This repository manages the configuration and test data for the Opensearch search system used in the MentorHub project. It consists of two containers. The first container starts the opensearch container. The second container initializes the index and mapping scripts, ensuring a ready-to-use environment for data, optionally loading test data. This dual-container setup provides a comprehensive solution for managing the Opensearch database, making it easy to deploy, configure, and populate with test data. When deployed into a production environment, we can utilize the second container with a different backing service, i.e. live opensearch
 
 [Here](https://github.com/orgs/agile-learning-institute/repositories?q=mentorhub-&type=all&sort=name) are all of the repositories in the [mentorHub](https://github.com/agile-learning-institute/mentorhub/tree/main) system
 
@@ -18,14 +18,14 @@ See [Tsconfig Reference](https://www.typescriptlang.org/tsconfig)
 
 ## Contributing
 
-The typescript files found in `./src/opensearch/` are used to grab test data from a `test-data.json` and perform the necessary data transformations before indexing the test data. There is a CLI tool at```./src/opensearch/opensearch-test.sh``` that can be used to run various tests on your opensearch container.
+The typescript files found in `./src/searchinit/` are used to grab test data from a `test-data.json` and perform the necessary data transformations before indexing the test data. There is a CLI tool at```./src/searchinit/opensearch-test.sh``` that can be used to run various tests on your opensearch container.
 
 You should do all work in a feature branch, and when you are ready to have your code deployed to the cloud open a pull request against that feature branch. Do not open a pull request without first building and testing the containers locally.
 
 ## Testing changes locally
 Run this from the project root directory (`mentorhub-search-opensearch`). This command creates an opensearch container then builds, bundles, and tests migrate.ts This is what you will use to test changes locally.
 ```bash
-./src/opensearch/localtest.sh
+./src/searchinit/localtest.sh
 ```
 
 ## Build and test the container
@@ -45,6 +45,6 @@ After that command completes successfully you can verify it worked successfully 
 If you don't get a response, you can follow [this guide](https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/) to troubleshoot.
 With a working container, you can make use of these tools
 ```bash
-./src/opensearch/localtest.sh
-./src/opensearch/opensearchtest.sh
+./src/searchinit/localtest.sh
+./src/searchinit/opensearchtest.sh
 ```

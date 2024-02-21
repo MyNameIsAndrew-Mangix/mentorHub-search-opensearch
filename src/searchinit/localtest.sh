@@ -25,8 +25,8 @@ export AUTH=admin:admin
 export PORT=9200
 export OPENSEARCH_INDEX=search-index
 export LOAD_TEST=true
-cp ./src/opensearch/entrypoint.sh ./dist/
-cp ./src/opensearch/mapping.json ./dist/
-cp ./src/opensearch/test-data.json ./dist/
+cp ./src/searchinit/entrypoint.sh ./dist/
+cp ./src/searchinit/mapping.json ./dist/
+cp ./src/searchinit/test-data.json ./dist/
 cd dist
 ./entrypoint.sh

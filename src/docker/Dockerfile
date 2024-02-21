@@ -10,9 +10,9 @@ COPY package*.json .
 RUN npm install
 
 COPY . .
-COPY ./src/opensearch/entrypoint.sh ./dist
-COPY ./src/opensearch/mapping.json ./dist
-COPY ./src/opensearch/test-data.json ./dist
+COPY ./src/searchinit/entrypoint.sh ./dist
+COPY ./src/searchinit/mapping.json ./dist
+COPY ./src/searchinit/test-data.json ./dist
 
 RUN npm run build
 
