@@ -85,8 +85,8 @@ while getopts ":p:gd:a:lmh" opt; do
       # Print manual
       echo "Usage: $0 [-ptdahl]"
       echo "Options:"
-      echo "  -p       Testing POST to _bulk endpoint. Requires [data_file] argument for JSON data file"
-      echo "  -g       Testing GET from _search endpoint. Use optional [index] to specify an index (e.g., -g my_index)"
+      echo "  -p       Testing POST. Requires [data_file] argument for JSON data file"
+      echo "  -g       Testing GET. Use optional [index] to specify an index (e.g., -g my_index)"
       echo "  -d       Removing duplicates. Requires [index] argument (e.g., -d my_index)"
       echo "  -a       Deleting all entries in the specified index (with confirmation). Requires [index] argument (e.g., -a my_index)"
       echo "  -l       List all available indices"
