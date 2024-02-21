@@ -48,8 +48,3 @@ With a working container, you can make use of these tools
 ./src/opensearch/localtest.sh
 ./src/opensearch/opensearchtest.sh
 ```
-
-## Refactors and Enhancements
-
-- [ ] Improve file structure/naming scheme
-- [ ] Improve functionality and usefulness of `opensearchtest.sh`
