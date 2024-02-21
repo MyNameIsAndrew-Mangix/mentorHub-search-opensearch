@@ -1,15 +1,15 @@
 {
   "scripts": {
-    "build": "tsc && webpack"
+    "build": "webpack"
   },
   "dependencies": {
-    "@opensearch-project/opensearch": "^2.5.0",
-    "ts-loader": "^9.5.1"
+    "@opensearch-project/opensearch": "^2.5.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",
     "typescript": "^5.3.3",
     "webpack": "^5.90.2",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "ts-loader": "^9.5.1"
   }
 }
