@@ -2,7 +2,6 @@
 
 This repository manages the configuration and test data for the Opensearch search system used in the MentorHub project. It consists of two containers. The first container starts the opensearch container. The second container initializes the index and mapping scripts, ensuring a ready-to-use environment for data, optionally loading test data. This dual-container setup provides a comprehensive solution for managing the Opensearch database, making it easy to deploy, configure, and populate with test data. When deployed into a production environment, we can utilize the second container with a different backing service, i.e. live opensearch
 
-
 [Here](https://github.com/orgs/agile-learning-institute/repositories?q=mentorhub-&type=all&sort=name) are all of the repositories in the [mentorHub](https://github.com/agile-learning-institute/mentorhub/tree/main) system
 
 ## Prerequisites
