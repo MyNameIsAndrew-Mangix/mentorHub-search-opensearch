@@ -23,7 +23,7 @@ RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \
     echo $DATE.$BRANCH.$PATCH > ./dist/VERSION.txt
 
 # Stage 2: Run the app in a lightweight image
-FROM node:21 as deploy
+FROM node:21-alpine as deploy
 
 # Set default ENV values
 ENV PROTOCOL=http
@@ -37,4 +37,4 @@ ENV LOAD_TEST=true
 WORKDIR /app
 
 COPY --from=build /app/dist .
-ENTRYPOINT [ "/bin/bash", "-c", "/app/entrypoint.sh" ]
+ENTRYPOINT [ "/bin/sh", "-c", "/app/entrypoint.sh" ]
