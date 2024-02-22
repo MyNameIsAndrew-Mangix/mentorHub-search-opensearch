@@ -1,5 +1,5 @@
 #Stage 1: build the node app
-FROM node:18 AS build
+FROM node:21 AS build
 
 # Install git (for branch/patch info)
 RUN apt-get update && apt-get install -y git
@@ -23,7 +23,7 @@ RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \
     echo $DATE.$BRANCH.$PATCH > ./dist/VERSION.txt
 
 # Stage 2: Run the app in a lightweight image
-FROM node:18 as deploy
+FROM node:21-alpine as deploy
 
 # Set default ENV values
 ENV PROTOCOL=http
