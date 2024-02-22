@@ -23,7 +23,7 @@ RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \
     echo $DATE.$BRANCH.$PATCH > ./dist/VERSION.txt
 
 # Stage 2: Run the app in a lightweight image
-FROM node:21-alpine as deploy
+FROM node:21 as deploy
 
 # Set default ENV values
 ENV PROTOCOL=http
