@@ -1,4 +1,4 @@
-#!/bin/ash
+#!/bin/sh
 echo "PROTOCOL: $PROTOCOL"
 echo "HOST: $HOST"
 echo "AUTH: $AUTH"
