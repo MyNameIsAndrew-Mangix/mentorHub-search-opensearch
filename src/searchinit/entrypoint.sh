@@ -1,4 +1,8 @@
 #!/bin/sh
+echo "##############################################"
+VERSION=$(cat VERSION.txt)
+echo "VERSION: $VERSION"
+echo "##############################################"
 echo "PROTOCOL: $PROTOCOL"
 echo "HOST: $HOST"
 echo "AUTH: $AUTH"
