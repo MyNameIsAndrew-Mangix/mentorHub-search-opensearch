@@ -6,11 +6,12 @@ const protocol: string = process.env.PROTOCOL!;
 const port: string = process.env.PORT!;
 const auth: string = process.env.AUTH!;
 const indexName: string = process.env.OPENSEARCH_INDEX!;
+const loadTest: string = process.env.LOAD_TEST!;
 
 
 async function main()
 {
-    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName);
+    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName + ", LOADTESTDATA: ", loadTest);
     console.log("Creating OpenSearch Client with Node:", protocol + "://" + auth + "@" + host + ":" + port);
     const opensearchClient: Client = new Client({
         node: protocol + "://" + auth + "@" + host + ":" + port
@@ -25,14 +26,19 @@ async function main()
         await verifyAndCreateIndex();
 
         await createOrUpdateIndexMapping();
-
-        await indexTestData();
+        if (loadTest === "true") {
+            await indexTestData();
+        }
+        else {
+            console.log("Loading testing data disabled");
+        }
 
     }
     catch (error) {
         console.log(error);
     }
     finally {
+        console.log("All done!");
         opensearchClient.close();
     }
 
