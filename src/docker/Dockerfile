@@ -37,4 +37,4 @@ ENV LOAD_TEST=true
 WORKDIR /app
 
 COPY --from=build /app/dist .
-ENTRYPOINT [ "/bin/bash", "-c", "/app/entrypoint.sh" ]
+ENTRYPOINT [ "/bin/sh", "-c", "/app/entrypoint.sh" ]
