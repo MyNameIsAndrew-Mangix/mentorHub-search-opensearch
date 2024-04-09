@@ -4,6 +4,9 @@ This repository manages the configuration and test data for the Opensearch searc
 
 [Here](https://github.com/orgs/agile-learning-institute/repositories?q=mentorhub-&type=all&sort=name) are all of the repositories in the [mentorHub](https://github.com/agile-learning-institute/mentorhub/tree/main) system
 
+# DISCLAIMER
+The Opensearch container is quite big, roughly 1.3 GB. This might present a problem for those on a metered connection looking to contribute.
+
 ## Prerequisites
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
