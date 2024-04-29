@@ -26,11 +26,11 @@ RUN BRANCH=$(git rev-parse --abbrev-ref HEAD) && \
 FROM node:21-alpine as deploy
 
 # Set default ENV values
-ENV PROTOCOL=http
+ENV PROTOCOL=https
 ENV HOST=172.17.0.2
 ENV AUTH=admin:admin
 ENV PORT=9200
-ENV OPENSEARCH_INDEX=search-index
+ENV ELASTICSEARCH_INDEX=search-index
 ENV LOAD_TEST=true
 
 # Copy files from build
