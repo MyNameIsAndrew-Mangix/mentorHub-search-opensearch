@@ -5,19 +5,22 @@ const host: string = process.env.HOST!;
 const protocol: string = process.env.PROTOCOL!;
 const port: string = process.env.PORT!;
 const auth: string = process.env.AUTH!;
-const indexName: string = process.env.OPENSEARCH_INDEX!;
+const indexName: string = process.env.ELASTICSEARCH_INDEX!;
 const loadTest: string = process.env.LOAD_TEST!;
-
 
 async function main()
 {
     console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName + ", LOADTESTDATA: ", loadTest);
-    console.log("Creating OpenSearch Client with Node:", protocol + "://" + host + ":" + port);
+    console.log("Creating Elasticsearch Client with Node:", protocol + "://" + host + ":" + port);
     const elasticSearchClient: Client = new Client({
         node: protocol + "://" + host + ":" + port,
         auth: {
             username: "elastic", // Default Elasticsearch username
-            password: "changeme" // Default Elasticsearch password
+            password: "o0=eLmmQbsrdEW89a-Id" // Elasticsearch password
+        },
+        tls: {
+            ca: "",
+            rejectUnauthorized: false
         }
     });
 
@@ -85,7 +88,7 @@ async function main()
         console.log("Transforming test data before indexing...");
         return testData.map((doc: any) =>
         {
-            //Opensearch doesn't like the source having an _id field, so we rename it. Eventually it will be along the lines of collectionNameId
+            //Elasticsearch doesn't like the source having an _id field, so we rename it. Eventually it will be along the lines of collectionNameId
             const { _id, ...transformedDoc } = doc;
             return { ...transformedDoc, 'ID': _id };
         });
@@ -101,9 +104,9 @@ async function main()
             index: indexName,
             body: mapping
         });
-        if (response.statusCode === 400) {
+        if (response && response.acknowledged === false) {
             // It's likely that it'll be a type error, i.e. trying to change the type of an existing mapping from string to keyword
-            throw new Error("Failed to create/update mapping: " + response.body + "\n Consider making a new container.");
+            throw new Error("Failed to create/update mapping.");
         }
         else {
             console.log("Mapping has been created/updated!");
@@ -118,17 +121,17 @@ async function main()
             const indexExists = await elasticSearchClient.indices.exists({
                 index: indexName
             });
-            // The index exists API operation returns only one of two possible response codes: 200 – the index exists, and 404 – the index does not exist.
-            // So we can check if statusCode === 404 with no edge cases
-            // if (indexExists.statusCode === 404) {
-            //     console.log(`Index of ${indexName} doesn't exist, creating index`);
-            //     await elasticSearchClient.indices.create({
-            //         index: indexName
-            //     });
-            // }
-            // else {
-            //     console.log(`Index ${indexName} exists!`);
-            // }
+            // The indices exists returns a boolean.
+            // So we can check if indexExists === false, with no edge cases
+            if (indexExists === false) {
+                console.log(`Index of ${indexName} doesn't exist, creating index`);
+                await elasticSearchClient.indices.create({
+                    index: indexName
+                });
+            }
+            else {
+                console.log(`Index ${indexName} exists!`);
+            }
         }
 
     }
@@ -136,10 +139,10 @@ async function main()
     async function testConnection()
     {
         if (await elasticSearchClient.ping()) {
-            console.log('Opensearch server is reachable');
+            console.log('Elasticsearch server is reachable');
         }
         else {
-            throw new Error('Did not recieve response from opensearch server');
+            throw new Error('Did not recieve response from elasticsearch server');
         }
     }
 }
