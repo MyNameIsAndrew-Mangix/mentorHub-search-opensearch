@@ -7,8 +7,7 @@ mh down
 # starts a new docker container named test-opensearch with the following environment variables
 # --detach runs the container in the background
 #plugs.security.disabled=true allows us to test using http
-docker run -e discovery.type=single-node -e cluster.name=mentorHub -e plugins.security.disabled=true -e OPENSEARCH_INITIAL_ADMIN_PASSWORD="55CKoK;9|'g{8i<4|Gny6pUX" -p 9200:9200 --name test-opensearch --detach opensearchproject/opensearch:2.12.0
-
+docker run -p 9200:9200 --name test-elasticsearch -it -m 1GB --detach docker.elastic.co/elasticsearch/elasticsearch:8.13.2
 
 
 #  sleep for 15 seconds; this is to ensure that the opensearch container is up and running before the script is executed, adjust as needed
