@@ -1,4 +1,4 @@
-import { Client } from "@opensearch-project/opensearch";
+import { Client } from "@elastic/elasticsearch";
 const fs = require("fs");
 
 const host: string = process.env.HOST!;
@@ -12,9 +12,13 @@ const loadTest: string = process.env.LOAD_TEST!;
 async function main()
 {
     console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName + ", LOADTESTDATA: ", loadTest);
-    console.log("Creating OpenSearch Client with Node:", protocol + "://" + auth + "@" + host + ":" + port);
-    const opensearchClient: Client = new Client({
-        node: protocol + "://" + auth + "@" + host + ":" + port
+    console.log("Creating OpenSearch Client with Node:", protocol + "://" + host + ":" + port);
+    const elasticSearchClient: Client = new Client({
+        node: protocol + "://" + host + ":" + port,
+        auth: {
+            username: "elastic", // Default Elasticsearch username
+            password: "changeme" // Default Elasticsearch password
+        }
     });
 
     const mappingPath: string = 'mapping.json';
@@ -39,7 +43,7 @@ async function main()
     }
     finally {
         console.log("All done!");
-        opensearchClient.close();
+        elasticSearchClient.close();
     }
 
 
@@ -52,22 +56,23 @@ async function main()
 
         // Index the data
         console.log("Attemping to index test data...");
-        const response = await opensearchClient.bulk({
+        const response = await elasticSearchClient.bulk({
             index: indexName,
             body: transformedTestData.flatMap((doc: any) => [
                 { index: { _index: indexName } },
                 doc,
             ])
         });
+        console.log(response);
 
-        if (!response.body.errors) {
+        if (!response.errors) {
             console.log("Successfully indexed test data!");
         }
         else {
             // Bulk sends a 200 if it reaches the server. 
             // Each document has their own status code, so we need to cycle through if there are errors in the body
             console.error("Errors occured during indexing");
-            response.body.items.forEach((item: any, index: any) =>
+            response.items.forEach((item: any, index: any) =>
             {
                 console.error(`Item ${index + 1} details:`, item);
                 console.error("Caused By:", item.index.error.caused_by);
@@ -92,7 +97,7 @@ async function main()
 
         const mapping = JSON.parse(fs.readFileSync(mappingPath, 'utf8'));
         // Create/update if there's mapping for the data
-        const response = await opensearchClient.indices.putMapping({
+        const response = await elasticSearchClient.indices.putMapping({
             index: indexName,
             body: mapping
         });
@@ -110,27 +115,27 @@ async function main()
         if (typeof indexName === "string") {
             // Check if index exists
             console.log("Verifying if index exists or needs to be created...");
-            const indexExists = await opensearchClient.indices.exists({
+            const indexExists = await elasticSearchClient.indices.exists({
                 index: indexName
             });
             // The index exists API operation returns only one of two possible response codes: 200 – the index exists, and 404 – the index does not exist.
             // So we can check if statusCode === 404 with no edge cases
-            if (indexExists.statusCode === 404) {
-                console.log(`Index of ${indexName} doesn't exist, creating index`);
-                await opensearchClient.indices.create({
-                    index: indexName
-                });
-            }
-            else {
-                console.log(`Index ${indexName} exists!`);
-            }
+            // if (indexExists.statusCode === 404) {
+            //     console.log(`Index of ${indexName} doesn't exist, creating index`);
+            //     await elasticSearchClient.indices.create({
+            //         index: indexName
+            //     });
+            // }
+            // else {
+            //     console.log(`Index ${indexName} exists!`);
+            // }
         }
 
     }
 
     async function testConnection()
     {
-        if (await opensearchClient.ping()) {
+        if (await elasticSearchClient.ping()) {
             console.log('Opensearch server is reachable');
         }
         else {
