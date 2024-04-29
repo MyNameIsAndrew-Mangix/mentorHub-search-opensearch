@@ -20,14 +20,14 @@ while getopts ":p:gd:a:lmh" opt; do
 
       echo "-=-=-=-=-=TESTING POST-=-=-=-=-="
       echo ""
-      curl -u admin:admin -k -XPOST "http://localhost:9200/_bulk" -H "Content-Type: application/json" --data-binary "@$DATA_FILE"
+      curl -u elastic:o0=eLmmQbsrdEW89a-Id -k -XPOST "https://localhost:9200/_bulk" -H "Content-Type: application/json" --data-binary "@$DATA_FILE"
       echo ""
       ;;
     g)
       # Testing GET
-        INDEX_NAME="$OPTARG"
+      INDEX_NAME="$OPTARG"
       echo ""
-      curl -u admin:admin -k -XGET "http://localhost:9200/$INDEX_NAME/_search" -H "Content-Type: application/json" -d '{
+      curl -u elastic:o0=eLmmQbsrdEW89a-Id -k -XGET "https://localhost:9200/$INDEX_NAME/_search" -H "Content-Type: application/json" -d '{
           "query": {
               "match_all": {}
           }
@@ -38,15 +38,15 @@ while getopts ":p:gd:a:lmh" opt; do
       # Removing duplicates
       echo "-=-=-=-=-=REMOVING DUPLICATES-=-=-=-=-="
       echo ""
-      curl -u admin:admin -k -XPOST "http://localhost:9200/${OPTARG}/_delete_by_query" -H "Content-Type: application/json" -d '{
+      curl -u elastic:o0=eLmmQbsrdEW89a-Id -k -XPOST "https://localhost:9200/${OPTARG}/_delete_by_query" -H "Content-Type: application/json" -d '{
           "query": {
               "match_all": {}
           }
       }'
       echo ""
       ;;
-      a)
-       # Deleting all entries (with confirmation)
+    a)
+      # Deleting all entries (with confirmation)
       if [ -z "$OPTARG" ]; then
         echo "Error: The -a option requires an argument for the index to delete."
         exit 1
@@ -56,29 +56,29 @@ while getopts ":p:gd:a:lmh" opt; do
       if [ "$confirm" == "y" ]; then
         echo "-=-=-=-=-=DELETING ALL ENTRIES-=-=-=-=-="
         echo ""
-        curl -u admin:admin -k -XDELETE "http://localhost:9200/${OPTARG}" -H "Content-Type: application/json"
+        curl -u elastic:o0=eLmmQbsrdEW89a-Id -k -XDELETE "https://localhost:9200/${OPTARG}" -H "Content-Type: application/json"
         echo ""
       else
         echo "Deletion canceled."
       fi
       ;;
-          l)
+    l)
       # Listing all available indices
       echo "-=-=-=-=-=LISTING AVAILABLE INDICES-=-=-=-=-="
       echo ""
-      curl -u admin:admin -k -XGET "http://localhost:9200/_cat/indices?v" -H "Content-Type: application/json"
+      curl -u elastic:o0=eLmmQbsrdEW89a-Id -k -XGET "https://localhost:9200/_cat/indices?v" -H "Content-Type: application/json"
       echo ""
       ;;
-      m)
+    m)
       # Retrieving mappings
-       if [ -z "$OPTARG" ]; then
+      if [ -z "$OPTARG" ]; then
         INDEX_NAME="_all"
       else
         INDEX_NAME="$OPTARG"
       fi
       echo "-=-=-=-=-=RETRIEVING MAPPINGS-=-=-=-=-="
       echo ""
-      curl -u admin:admin -k -XGET "http://localhost:9200/$INDEX_NAME/_mapping" -H "Content-Type: application/json"
+      curl -u elastic:o0=eLmmQbsrdEW89a-Id -k -XGET "https://localhost:9200/$INDEX_NAME/_mapping" -H "Content-Type: application/json"
       echo ""
       ;;
     h)
