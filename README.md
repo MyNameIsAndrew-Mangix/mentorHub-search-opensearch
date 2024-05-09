@@ -1,11 +1,11 @@
-# mentorhub-search-opensearch
+# mentorhub-search-elasticsearch
 
-This repository manages the configuration and test data for the Opensearch search system used in the MentorHub project. It consists of two containers. The first container starts the opensearch container. The second container initializes the index and mapping scripts, ensuring a ready-to-use environment for data, optionally loading test data. This dual-container setup provides a comprehensive solution for managing the Opensearch database, making it easy to deploy, configure, and populate with test data. When deployed into a production environment, we can utilize the second container with a different backing service, i.e. live opensearch
+This repository manages the configuration and test data for the Elasticsearch search system used in the MentorHub project. It consists of two containers. The first container starts the elasticsearch container. The second container initializes the index and mapping scripts, ensuring a ready-to-use environment for data, optionally loading test data. This dual-container setup provides a comprehensive solution for managing the Elasticsearch database, making it easy to deploy, configure, and populate with test data. When deployed into a production environment, we can utilize the second container with a different backing service, i.e. live elasticsearch
 
 [Here](https://github.com/orgs/agile-learning-institute/repositories?q=mentorhub-&type=all&sort=name) are all of the repositories in the [mentorHub](https://github.com/agile-learning-institute/mentorhub/tree/main) system
 
 # DISCLAIMER
-The Opensearch container is quite big, roughly 1.3 GB. This might present a problem for those on a metered connection looking to contribute.
+The Elasticsearch container is quite big, roughly 1.3 GB. This might present a problem for those on a metered connection looking to contribute.
 
 ## Prerequisites
 
@@ -21,12 +21,12 @@ See [Tsconfig Reference](https://www.typescriptlang.org/tsconfig)
 
 ## Contributing
 
-The typescript files found in `./src/searchinit/` are used to grab test data from a `test-data.json` and perform the necessary data transformations before indexing the test data. There is a CLI tool at```./src/searchinit/opensearch-test.sh``` that can be used to run various tests on your opensearch container.
+The typescript files found in `./src/searchinit/` are used to grab test data from a `test-data.json` and perform the necessary data transformations before indexing the test data. There is a CLI tool at```./src/searchinit/elasticsearch-test.sh``` that can be used to run various tests on your elasticsearch container.
 
 You should do all work in a feature branch, and when you are ready to have your code deployed to the cloud open a pull request against that feature branch. Do not open a pull request without first building and testing the containers locally.
 
 ## Testing changes locally
-Run this from the project root directory (`mentorhub-search-opensearch`). This command creates an opensearch container then builds, bundles, and tests migrate.ts This is what you will use to test changes locally.
+Run this from the project root directory (`mentorhub-search-elasticsearch`). This command creates an elasticsearch container then builds, bundles, and tests migrate.ts This is what you will use to test changes locally.
 ```bash
 ./src/searchinit/localtest.sh
 ```
@@ -45,9 +45,9 @@ After that command completes successfully you can verify it worked successfully 
  curl https://localhost:9200 -ku 'admin:admin'
 ```
 
-If you don't get a response, you can follow [this guide](https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/) to troubleshoot.
+If you don't get a response, you can follow [this guide](hhttps://www.elastic.co/guide/en/elasticsearch/reference/current/docker.html) to troubleshoot.
 With a working container, you can make use of these tools
 ```bash
 ./src/searchinit/localtest.sh
-./src/searchinit/opensearchtest.sh
+./src/searchinit/elasticsearchtest.sh
 ```
