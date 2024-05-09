@@ -6,7 +6,7 @@ fi
 mh down
 # starts a new docker container named test-elasticsearch with the following environment variables
 # --detach runs the container in the background
-docker run -p 9200:9200  -e "ELASTIC_PASSWORD=o0=eLmmQbsrdEW89a-Id" --name test-elasticsearch -it -m 1GB --detach docker.elastic.co/elasticsearch/elasticsearch:8.13.2
+mh up elasticonly
 
 
 #  sleep for 15 seconds; this is to ensure that the elasticsearch container is up and running before the script is executed, adjust as needed
