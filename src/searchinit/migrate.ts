@@ -1,16 +1,19 @@
 import { Client } from "@elastic/elasticsearch";
-const fs = require("fs");
+import { MongoClient, Db, ObjectId } from 'mongodb';
+import { Config } from '../config/config';
+import * as fs from "fs";
 
 const host: string = process.env.HOST!;
 const protocol: string = process.env.PROTOCOL!;
 const port: string = process.env.PORT!;
-const auth: string = process.env.AUTH!;
 const indexName: string = process.env.ELASTICSEARCH_INDEX!;
 const loadTest: string = process.env.LOAD_TEST!;
 
+const config = new Config();
+
 async function main()
 {
-    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName + ", LOADTESTDATA: ", loadTest);
+    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", INDEXNAME: " + indexName + ", LOADTESTDATA: ", loadTest);
     console.log("Creating Elasticsearch Client with Node:", protocol + "://" + host + ":" + port);
     const elasticSearchClient: Client = new Client({
         node: protocol + "://" + host + ":" + port,
@@ -23,6 +26,7 @@ async function main()
             rejectUnauthorized: false
         }
     });
+
 
     const mappingPath: string = 'mapping.json';
     const testDataPath: string = 'test-data.json';
@@ -52,10 +56,11 @@ async function main()
 
     async function indexTestData()
     {
+        const mongoTestData = await fetchDataFromAllMongoCollections();
 
         const testData = JSON.parse(fs.readFileSync(testDataPath, 'utf8'));
         // Do necessary transformations on test data
-        const transformedTestData = transformData(testData);
+        const transformedTestData = transformData(mongoTestData);
 
         // Index the data
         console.log("Attemping to index test data...");
@@ -66,8 +71,6 @@ async function main()
                 doc,
             ])
         });
-        console.log(response);
-
         if (!response.errors) {
             console.log("Successfully indexed test data!");
         }
@@ -75,11 +78,59 @@ async function main()
             // Bulk sends a 200 if it reaches the server. 
             // Each document has their own status code, so we need to cycle through if there are errors in the body
             console.error("Errors occured during indexing");
+            const errors: any[] = [];
             response.items.forEach((item: any, index: any) =>
             {
                 console.error(`Item ${index + 1} details:`, item);
-                console.error("Caused By:", item.index.error.caused_by);
+                console.error("Caused By:", item.index.error);
+                errors.push({
+                    itemIndex: index + 1,
+                    details: item,
+                    cause: item.index.error
+                });
             });
+            const jsonOutputPath = '../error.json';
+            fs.writeFileSync(jsonOutputPath, JSON.stringify(errors, null, 2));
+        }
+
+        async function fetchDataFromAllMongoCollections()
+        {
+            const mongoClient = new MongoClient(config.getConnectionString());
+            try {
+                await mongoClient.connect();
+                const db = mongoClient.db(config.getDbName());
+                console.info("Database", config.getDbName(), "Connected");
+
+                const targetCollections = ['encounters', 'partners', 'paths', 'people', 'plans', 'resources', 'reviews', 'skills', 'topics'];
+
+                const collections = await db.listCollections().toArray();
+
+                const results: { _id: ObjectId; collection: string; }[] = [];
+
+                for (const collectionInfo of collections) {
+                    const collectionName = collectionInfo.name;
+                    if (targetCollections.includes(collectionName)) {
+                        const collection = db.collection(collectionName);
+                        const documents = await collection.find({}).toArray();
+                        documents.forEach(doc =>
+                        {
+                            results.push({
+                                collection: collectionName,
+                                ...doc
+                            });
+                        });
+                    }
+                }
+                const jsonOutputPath = 'results.json';
+                fs.writeFileSync(jsonOutputPath, JSON.stringify(results, null, 2));
+                return results;
+            } catch (error) {
+                console.error(error);
+            }
+            finally {
+                await mongoClient.close();
+                console.info("Retrieved test data from mongoDB");
+            }
         }
     }
 
