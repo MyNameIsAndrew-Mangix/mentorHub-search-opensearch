@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "import": "mh up mongodb && sleep 15 && node ./src/import/importer.js"
   },
   "devDependencies": {
     "@types/node": "^20.11.17",

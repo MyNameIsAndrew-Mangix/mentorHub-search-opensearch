@@ -2,11 +2,20 @@ const path = require('path');
 
 module.exports = {
     mode: 'production',
-  entry: './src/searchinit/migrate.ts',
+  entry: {
+    migrate: {
+      import: './src/searchinit/migrate.ts',
+      filename: './dist/bundle.js'
+    },
+    import: {
+      import: './src/import/import.ts',
+      filename: './src/import/importer.js'
+    }
+  },
   target: 'node',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname),
   },
   // Add any necessary modules/loaders
   module: {
