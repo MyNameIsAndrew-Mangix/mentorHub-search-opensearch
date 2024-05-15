@@ -1,16 +1,17 @@
 import { Client } from "@elastic/elasticsearch";
-const fs = require("fs");
+import * as fs from "fs";
 
 const host: string = process.env.HOST!;
 const protocol: string = process.env.PROTOCOL!;
 const port: string = process.env.PORT!;
-const auth: string = process.env.AUTH!;
 const indexName: string = process.env.ELASTICSEARCH_INDEX!;
 const loadTest: string = process.env.LOAD_TEST!;
 
+
+
 async function main()
 {
-    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", AUTH: " + auth + ", INDEXNAME: " + indexName + ", LOADTESTDATA: ", loadTest);
+    console.log("HOST: " + host + ", PROTOCOL: " + protocol + ", PORT: " + port + ", INDEXNAME: " + indexName + ", LOADTESTDATA: ", loadTest);
     console.log("Creating Elasticsearch Client with Node:", protocol + "://" + host + ":" + port);
     const elasticSearchClient: Client = new Client({
         node: protocol + "://" + host + ":" + port,
@@ -23,6 +24,7 @@ async function main()
             rejectUnauthorized: false
         }
     });
+
 
     const mappingPath: string = 'mapping.json';
     const testDataPath: string = 'test-data.json';
@@ -66,8 +68,6 @@ async function main()
                 doc,
             ])
         });
-        console.log(response);
-
         if (!response.errors) {
             console.log("Successfully indexed test data!");
         }
@@ -75,13 +75,22 @@ async function main()
             // Bulk sends a 200 if it reaches the server. 
             // Each document has their own status code, so we need to cycle through if there are errors in the body
             console.error("Errors occured during indexing");
+            const errors: any[] = [];
             response.items.forEach((item: any, index: any) =>
             {
                 console.error(`Item ${index + 1} details:`, item);
-                console.error("Caused By:", item.index.error.caused_by);
+                console.error("Caused By:", item.index.error);
+                errors.push({
+                    itemIndex: index + 1,
+                    details: item,
+                    cause: item.index.error
+                });
             });
+            const jsonOutputPath = '../error.json';
+            fs.writeFileSync(jsonOutputPath, JSON.stringify(errors, null, 2));
         }
     }
+
 
     function transformData(testData: any): any
     {

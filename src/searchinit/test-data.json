@@ -1,163 +1,5802 @@
 [
-    {
-        "_id": {
-            "$oid": "bbbb00000000000000000000"
-        },
-        "name": "Junior Jobs",
-        "status": "Active"
-
-    },
-    {
-        "_id": {
-            "$oid": "bbbb00000000000000000001"
-        },
-        "name": "Enok",
-        "status": "Pending"
-    },
-    {
-        "_id": {
-            "$oid": "bbbb00000000000000000002"
-        },
-        "name": "Google Search",
-        "status": "Active",
-        "description": "Members that found us on Google"
-    }, {
-        "_id": {
-          "$oid": "aaaa00000000000000000000"
-        },
-        "name": "James Smith",
-        "status": "Pending",
-        "member": true,
-        "mentor": false,
-        "donor": false,
-        "contact": false,
-        "mentorName": "Michael Smith",
-        "partnerId": {
-          "$oid": "bbbb00000000000000000007"
-        },
-        "title": "Apprentice",
-        "eMail": "JamesSmith@fakemail.com",
-        "gitHub": "JamesSmith",
-        "device": "Mac Intel",
-        "location": "GVL SC",
-        "phone": "449-882-6722",
-        "description": "She was too busy always talking about what she wanted to do to actually do any of it.",
-        "lastSaved": {
-          "fromIp": "97.56.222.85",
-          "byUser": "d3dabeb0-6b81-11ee-b962-0242ac120002",
-          "atTime": "4/8/1975 14:40:15",
-          "correlationId": "6baff06e-3be9-4f6d-888c-0777c80a0548"
-        }
+  {
+    "collection": "paths",
+    "_id": "6643967f1d5af9c1231d8f50",
+    "name": "The Odin Project",
+    "status": "Active",
+    "segments": [
+      {
+        "name": "Foundations",
+        "topics": [
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003",
+          "aaaa00000000000000000004"
+        ]
       },
       {
-        "_id": {
-          "$oid": "aaaa00000000000000000001"
-        },
-        "name": "Michael Smith",
-        "status": "Active",
-        "member": true,
-        "mentor": false,
-        "donor": false,
-        "contact": false,
-        "mentorName": "Olivia Jones",
-        "partnerId": {
-          "$oid": "bbbb00000000000000000005"
-        },
-        "title": "Apprentice",
-        "eMail": "MichaelSmith@fakemail.com",
-        "gitHub": "MichaelSmith",
-        "device": "Mac Apple",
-        "location": "Milford Deleware",
-        "phone": "875-959-5595",
-        "description": "Malls are great places to shop; I can find everything I need under one roof.",
-        "lastSaved": {
-          "fromIp": "7.207.213.107",
-          "byUser": "d3dac1b2-6b81-11ee-b962-0242ac120002",
-          "atTime": "5/2/2023 18:51:03",
-          "correlationId": "a47810bc-2a19-489a-9c90-8868b2fd3cb6"
-        }
+        "name": "Intermediate HTML and CSS",
+        "topics": [
+          "aaaa00000000000000000005",
+          "aaaa00000000000000000006",
+          "aaaa00000000000000000007"
+        ]
       },
       {
-        "_id": {
-          "$oid": "aaaa00000000000000000002"
-        },
-        "name": "Thomas Smith",
-        "status": "Archived",
-        "member": true,
-        "mentor": false,
-        "donor": true,
-        "contact": false,
-        "mentorName": "Jacob Brown",
-        "partnerId": {
-          "$oid": "bbbb00000000000000000005"
-        },
-        "title": "Resident",
-        "eMail": "ThomasSmith@fakemail.com",
-        "gitHub": "ThomasSmith",
-        "device": "Windows / WSL",
-        "location": "Asheville",
-        "phone": "205-948-6013",
-        "description": "He didn't understand why the bird wanted to ride the bicycle.",
-        "lastSaved": {
-          "fromIp": "24.62.204.82",
-          "byUser": "d3dac34c-6b81-11ee-b962-0242ac120002",
-          "atTime": "5/23/2010 12:21:05",
-          "correlationId": "7f52c14d-9e89-459b-b122-769c66e287a2"
-        }
+        "name": "JavaScript",
+        "topics": [
+          "aaaa00000000000000000008",
+          "aaaa00000000000000000009",
+          "aaaa00000000000000000010"
+        ]
       },
       {
-        "_id": {
-          "$oid": "aaaa00000000000000000003"
-        },
-        "name": "Emily Smith",
-        "status": "Inactive",
-        "member": true,
-        "mentor": false,
-        "donor": true,
-        "contact": true,
-        "mentorName": "Abigail Evans",
-        "partnerId": {
-          "$oid": "bbbb00000000000000000005"
-        },
-        "title": "Distinguished",
-        "eMail": "EmilySmith@fakemail.com",
-        "gitHub": "EmilySmith",
-        "device": "Linux",
-        "location": "",
-        "phone": "246-906-8608",
-        "description": "There is no better feeling than staring at a wall with closed eyes.",
-        "lastSaved": {
-          "fromIp": "84.251.150.26",
-          "byUser": "d3dac496-6b81-11ee-b962-0242ac120002",
-          "atTime": "6/12/2010 16:23:03",
-          "correlationId": "9f5bc046-f22f-4e27-95f9-6f66fbd43cad"
-        }
+        "name": "Advanced HTML and CSS",
+        "topics": [
+          "aaaa00000000000000000011",
+          "aaaa00000000000000000012",
+          "aaaa00000000000000000013"
+        ]
       },
       {
-        "_id": {
-          "$oid": "aaaa00000000000000000004"
-        },
-        "name": "Elizabeth Smith",
-        "status": "Pending",
-        "member": false,
-        "mentor": false,
-        "donor": true,
-        "contact": true,
-        "mentorName": "",
-        "partnerId": {
-          "$oid": "bbbb00000000000000000007"
-        },
-        "eMail": "ElizabethSmith@fakemail.com",
-        "gitHub": "ElizabethSmith",
-        "device": "Mac Intel",
-        "location": "Colombia",
-        "phone": "343-998-6637",
-        "description": "They wandered into a strange Tiki bar on the edge of the small beach town.",
-        "lastSaved": {
-          "fromIp": "171.83.79.187",
-          "byUser": "d3dac5b8-6b81-11ee-b962-0242ac120002",
-          "atTime": "10/1/1996 19:27:16",
-          "correlationId": "43e0061e-f714-4198-a87f-f34bc8177dd3"
-        }
+        "name": "React",
+        "topics": [
+          "aaaa00000000000000000014",
+          "aaaa00000000000000000015",
+          "aaaa00000000000000000016"
+        ]
+      },
+      {
+        "name": "NodeJS",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Getting Hired",
+        "topics": [
+          "aaaa00000000000000000004",
+          "aaaa00000000000000000005",
+          "aaaa00000000000000000006"
+        ]
       }
     ]
+  },
+  {
+    "collection": "paths",
+    "_id": "6643967f1d5af9c1231d8f51",
+    "name": "EngineerKit",
+    "status": "Active",
+    "segments": [
+      {
+        "name": "Craftsmanship",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Human Experience",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Product Life Cycle",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Computing",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Internet",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Tooling",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Programming Languages",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Automated Testing",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Clean Code",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Data",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Infrastructure",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Security",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Monitoring",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Operations",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      },
+      {
+        "name": "Architecture",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "paths",
+    "_id": "6643967f1d5af9c1231d8f52",
+    "name": "Salesforce",
+    "status": "Active",
+    "segments": [
+      {
+        "name": "Developer",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "paths",
+    "_id": "6643967f1d5af9c1231d8f53",
+    "name": "Cantrillo",
+    "status": "Active",
+    "segments": [
+      {
+        "name": "Fundamentals",
+        "topics": [
+          "aaaa00000000000000000001",
+          "aaaa00000000000000000002",
+          "aaaa00000000000000000003"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "paths",
+    "_id": "6643967f1d5af9c1231d8f54",
+    "name": "SRE Speciality",
+    "status": "Active",
+    "segments": [
+      {
+        "name": "SRE Fundamentals",
+        "topics": []
+      },
+      {
+        "name": "AWS Cloud Services",
+        "topics": []
+      },
+      {
+        "name": "Azure Cloud Services",
+        "topics": []
+      },
+      {
+        "name": "Google Cloud Services",
+        "topics": []
+      },
+      {
+        "name": "IBM Cloud Services",
+        "topics": []
+      },
+      {
+        "name": "K8S Certification",
+        "topics": []
+      },
+      {
+        "name": "Docker Certification",
+        "topics": []
+      }
+    ]
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000000",
+    "userName": "JamesSmith",
+    "firstName": "James",
+    "lastName": "Smith",
+    "status": "Pending",
+    "roles": [
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000007",
+    "title": "Apprentice",
+    "cadence": "Daily",
+    "eMail": "JamesSmith@fakemail.com",
+    "gitHub": "JamesSmith",
+    "device": "Mac (Intel)",
+    "location": "GVL SC",
+    "phone": "449-882-6722",
+    "description": "She was too busy always talking about what she wanted to do to actually do any of it.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f55",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000001",
+    "userName": "MichaelSmith",
+    "firstName": "Michael",
+    "lastName": "Smith",
+    "status": "Active",
+    "roles": [
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000007",
+    "partnerId": "bbbb00000000000000000005",
+    "title": "Apprentice",
+    "cadence": "Monthly",
+    "eMail": "MichaelSmith@fakemail.com",
+    "gitHub": "MichaelSmith",
+    "device": "Mac (Apple)",
+    "location": "Milford Deleware",
+    "phone": "875-959-5595",
+    "description": "Malls are great places to shop; I can find everything I need under one roof.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f56",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000002",
+    "userName": "ThomasSmith",
+    "firstName": "Thomas",
+    "lastName": "Smith",
+    "status": "Archived",
+    "roles": [
+      "Mentor",
+      "Staff"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000005",
+    "title": "Resident",
+    "cadence": "As Needed",
+    "eMail": "ThomasSmith@fakemail.com",
+    "gitHub": "ThomasSmith",
+    "device": "Windows",
+    "location": "Asheville",
+    "phone": "205-948-6013",
+    "description": "He didn't understand why the bird wanted to ride the bicycle.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f57",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000003",
+    "userName": "EmilySmith",
+    "firstName": "Emily",
+    "lastName": "Smith",
+    "status": "Inactive",
+    "roles": [
+      "Member",
+      "Donor"
+    ],
+    "mentorId": "aaaa00000000000000000007",
+    "partnerId": "bbbb00000000000000000005",
+    "title": "Distinguished",
+    "cadence": "Every 2 Weeks",
+    "eMail": "EmilySmith@fakemail.com",
+    "gitHub": "EmilySmith",
+    "device": "Linux",
+    "location": "",
+    "phone": "246-906-8608",
+    "description": "There is no better feeling than staring at a wall with closed eyes.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f58",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000004",
+    "userName": "ElizabethSmith",
+    "firstName": "Elizabeth",
+    "lastName": "Smith",
+    "status": "Pending",
+    "roles": [
+      "Donor",
+      "Partner"
+    ],
+    "partnerId": "bbbb00000000000000000007",
+    "eMail": "ElizabethSmith@fakemail.com",
+    "gitHub": "ElizabethSmith",
+    "device": "Mac (Intel)",
+    "location": "Colombia",
+    "phone": "343-998-6637",
+    "description": "They wandered into a strange Tiki bar on the edge of the small beach town.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f59",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000005",
+    "userName": "SamuelSmith",
+    "firstName": "Samuel",
+    "lastName": "Smith",
+    "status": "Active",
+    "roles": [
+      "Mentor",
+      "Donor"
+    ],
+    "partnerId": "bbbb00000000000000000007",
+    "eMail": "SamuelSmith@fakemail.com",
+    "gitHub": "SamuelSmith",
+    "device": "Mac (Apple)",
+    "location": "Clinton NC",
+    "phone": "569-299-4436",
+    "description": "He learned the important lesson that a picnic at the beach on a windy day is a bad idea.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f5a",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000006",
+    "userName": "Jacobmith",
+    "firstName": "Jacob",
+    "lastName": "Smith",
+    "status": "Archived",
+    "roles": [
+      "Partner"
+    ],
+    "partnerId": "bbbb00000000000000000005",
+    "eMail": "JacobSmith@fakemail.com",
+    "gitHub": "JacobSmith",
+    "device": "Mac (Intel)",
+    "location": "NY-NY",
+    "phone": "374-163-7218",
+    "description": "The sunblock was handed to the girl before practice, but the burned skin was proof she did not apply it.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f5b",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000007",
+    "userName": "EmmaSmith",
+    "firstName": "Emma",
+    "lastName": "Smith",
+    "status": "Inactive",
+    "roles": [
+      "Partner"
+    ],
+    "eMail": "EmmaSmith@fakemail.com",
+    "gitHub": "EmmaSmith",
+    "device": "Mac (Apple)",
+    "location": "Greensboro SC",
+    "phone": "395-747-6520",
+    "description": "He found rain fascinating yet unpleasant.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f5c",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000008",
+    "userName": "BenjaminSmith",
+    "firstName": "Benjamin",
+    "lastName": "Smith",
+    "status": "Pending",
+    "roles": [
+      "Partner"
+    ],
+    "mentorId": "aaaa00000000000000000007",
+    "partnerId": "bbbb00000000000000000007",
+    "title": "Candidate",
+    "cadence": "Weekly",
+    "eMail": "BenjaminSmith@fakemail.com",
+    "gitHub": "BenjaminSmith",
+    "device": "Mac (Intel)",
+    "location": "",
+    "phone": "939-232-8371",
+    "description": "Im working on a sweet potato farm.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f5d",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000009",
+    "userName": "OliviaSmith",
+    "firstName": "Olivia",
+    "lastName": "Smith",
+    "status": "Active",
+    "roles": [
+      "Partner"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000005",
+    "title": "Candidate",
+    "cadence": "Twice a Week",
+    "eMail": "OliviaSmith@fakemail.com",
+    "gitHub": "OliviaSmith",
+    "device": "Mac (Intel)",
+    "location": "",
+    "phone": "940-324-3220",
+    "description": "Excitement replaced fear until the final moment.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f5e",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000010",
+    "userName": "DavidSmith",
+    "firstName": "David",
+    "lastName": "Smith",
+    "status": "Archived",
+    "roles": [
+      "Partner"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000001",
+    "title": "Resident",
+    "cadence": "As Needed",
+    "eMail": "DavidSmith@fakemail.com",
+    "gitHub": "DavidSmith",
+    "device": "Mac (Apple)",
+    "location": "",
+    "phone": "973-666-4483",
+    "description": "It was the scarcity that fueled his creativity.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f5f",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000011",
+    "userName": "AlexanderSmith",
+    "firstName": "Alexande",
+    "lastName": "Smith",
+    "status": "Inactive",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000007",
+    "partnerId": "bbbb00000000000000000005",
+    "title": "Distinguished",
+    "cadence": "Daily",
+    "eMail": "AlexanderSmith@fakemail.com",
+    "gitHub": "AlexanderSmith",
+    "device": "Windows",
+    "location": "Denver CO",
+    "phone": "593-264-9430",
+    "description": "Shingle color was not something the couple had ever talked about.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f60",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000012",
+    "userName": "NoahSmith",
+    "firstName": "Noah",
+    "lastName": "Smith",
+    "status": "Pending",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000005",
+    "eMail": "NoahSmith@fakemail.com",
+    "gitHub": "NoahSmith",
+    "device": "Linux",
+    "location": "Asheville",
+    "phone": "325-858-2074",
+    "description": "When he asked her favorite number, she answered without hesitation that it was diamonds.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f61",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000013",
+    "userName": "JoshuaSmith",
+    "firstName": "Joshua",
+    "lastName": "Smith",
+    "status": "Active",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000003",
+    "eMail": "JoshuaSmith@fakemail.com",
+    "gitHub": "JoshuaSmith",
+    "device": "Mac (Intel)",
+    "location": "India (works US EST)",
+    "phone": "268-595-5867",
+    "description": "Grape jelly was leaking out the hole in the roof.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f62",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000014",
+    "userName": "MatthewSmith",
+    "firstName": "Matthew",
+    "lastName": "Smith",
+    "status": "Archived",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000005",
+    "eMail": "MatthewSmith@fakemail.com",
+    "gitHub": "MatthewSmith",
+    "device": "Mac (Apple)",
+    "location": "Asheville, NC",
+    "phone": "259-687-4850",
+    "description": "The swirled lollipop had issues with the pop rock candy.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f63",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000015",
+    "userName": "IsabellaSmith",
+    "firstName": "Isabell",
+    "lastName": "Smith",
+    "status": "Inactive",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "eMail": "IsabellaSmith@fakemail.com",
+    "gitHub": "IsabellaSmith",
+    "device": "Mac (Intel)",
+    "location": "GVL SC",
+    "phone": "281-776-6480",
+    "description": "It must be five o'clock somewhere.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f64",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000016",
+    "userName": "EthanSmith",
+    "firstName": "Etha",
+    "lastName": "Smith",
+    "status": "Pending",
+    "mentorId": "aaaa00000000000000000007",
+    "partnerId": "bbbb00000000000000000004",
+    "title": "Apprentice",
+    "cadence": "Monthly",
+    "eMail": "EthanSmith@fakemail.com",
+    "gitHub": "EthanSmith",
+    "device": "Mac (Apple)",
+    "location": "Milford Deleware",
+    "phone": "663-878-2807",
+    "description": "Dan ate the clouds like cotton candy.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f65",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000017",
+    "userName": "AnthonySmith",
+    "firstName": "Anthony",
+    "lastName": "Smith",
+    "status": "Active",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000007",
+    "title": "Apprentice",
+    "cadence": "Twice a Week",
+    "eMail": "AnthonySmith@fakemail.com",
+    "gitHub": "AnthonySmith",
+    "device": "Mac (Intel)",
+    "location": "Asheville",
+    "phone": "982-379-8569",
+    "description": "This made him feel like an old-style rootbeer float smells.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f66",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000018",
+    "userName": "GraceSmith",
+    "firstName": "Grace",
+    "lastName": "Smith",
+    "status": "Archived",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000007",
+    "partnerId": "bbbb00000000000000000005",
+    "title": "Resident",
+    "cadence": "Every 2 Weeks",
+    "eMail": "GraceSmith@fakemail.com",
+    "gitHub": "GraceSmith",
+    "device": "Mac (Intel)",
+    "location": "",
+    "phone": "915-510-2884",
+    "description": "Thigh-high in the water, the fisherman's hope for dinner soon turned to despair.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f67",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000019",
+    "userName": "SophiaSmith",
+    "firstName": "Sophia",
+    "lastName": "Smith",
+    "status": "Inactive",
+    "roles": [
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000003",
+    "title": "Distinguished",
+    "cadence": "Weekly",
+    "eMail": "SophiaSmith@fakemail.com",
+    "gitHub": "SophiaSmith",
+    "device": "Mac (Apple)",
+    "location": "Colombia",
+    "phone": "546-925-3228",
+    "description": "his seven-layer cake only had six layers.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f68",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000020",
+    "userName": "MiaSmith",
+    "firstName": "Mia",
+    "lastName": "Smith",
+    "status": "Pending",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000005",
+    "eMail": "MiaSmith@fakemail.com",
+    "gitHub": "MiaSmith",
+    "device": "Windows",
+    "location": "Clinton NC",
+    "phone": "472-851-8320",
+    "description": "The lyrics of the song sounded like fingernails on a chalkboard.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f69",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000021",
+    "userName": "AbigailSmith",
+    "firstName": "Abigail",
+    "lastName": "Smith",
+    "status": "Active",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000007",
+    "eMail": "AbigailSmith@fakemail.com",
+    "gitHub": "AbigailSmith",
+    "device": "Linux",
+    "location": "NY-NY",
+    "phone": "506-785-6000",
+    "description": "Boulders lined the side of the road foretelling what could come next.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f6a",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000022",
+    "userName": "AvSmith",
+    "firstName": "Ava",
+    "lastName": "Smith",
+    "status": "Archived",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000007",
+    "eMail": "AvaSmith@fakemail.com",
+    "gitHub": "AvaSmith",
+    "device": "Mac (Intel)",
+    "location": "Greensboro SC",
+    "phone": "172-501-8621",
+    "description": "The random sentence generator generated a random sentence about a random sentence.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f6b",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000023",
+    "userName": "LucasSmith",
+    "firstName": "Lucas",
+    "lastName": "Smith",
+    "status": "Inactive",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "eMail": "LucasSmith@fakemail.com",
+    "gitHub": "LucasSmith",
+    "device": "Mac (Apple)",
+    "location": "",
+    "phone": "546-438-8638",
+    "description": "I am never at home on Sundays.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f6c",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000024",
+    "userName": "JamesJones",
+    "firstName": "Jame",
+    "lastName": "Jones",
+    "status": "Pending",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000007",
+    "partnerId": "bbbb00000000000000000002",
+    "title": "Candidate",
+    "cadence": "Monthly",
+    "eMail": "JamesJones@fakemail.com",
+    "gitHub": "JamesJones",
+    "device": "Mac (Intel)",
+    "location": "",
+    "phone": "288-935-7450",
+    "description": "She had convinced her kids that any mushroom found on the ground would kill them if they touched it.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f6d",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000025",
+    "userName": "MichaelJones",
+    "firstName": "Michael",
+    "lastName": "Jones",
+    "status": "Active",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000007",
+    "title": "Candidate",
+    "cadence": "Weekly",
+    "eMail": "MichaelJones@fakemail.com",
+    "gitHub": "MichaelJones",
+    "device": "Mac (Apple)",
+    "location": "",
+    "phone": "913-699-6009",
+    "description": "He picked up trash in his spare time to dump in his neighbor's yard.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f6e",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000026",
+    "userName": "ThomasJones",
+    "firstName": "Thomas",
+    "lastName": "Jones",
+    "status": "Archived",
+    "roles": [
+      "Mentor",
+      "Member"
+    ],
+    "mentorId": "aaaa00000000000000000005",
+    "partnerId": "bbbb00000000000000000005",
+    "title": "Resident",
+    "cadence": "As Needed",
+    "eMail": "ThomasJones@fakemail.com",
+    "gitHub": "ThomasJones",
+    "device": "Mac (Intel)",
+    "location": "Denver CO",
+    "phone": "421-121-5444",
+    "description": "The bees decided to have a mutiny against their queen.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f6f",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000027",
+    "userName": "EmilyJones",
+    "firstName": "Emily",
+    "lastName": "Jones",
+    "status": "Inactive",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000001",
+    "title": "Distinguished",
+    "cadence": "Daily",
+    "eMail": "EmilyJones@fakemail.com",
+    "gitHub": "EmilyJones",
+    "device": "Mac (Intel)",
+    "location": "Asheville",
+    "phone": "290-453-3295",
+    "description": "I had a friend in high school named Rick Shaw, but he was fairly useless as a mode of transport.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f70",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000028",
+    "userName": "ElizabethJones",
+    "firstName": "Elizabeth",
+    "lastName": "Jones",
+    "status": "Pending",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000005",
+    "eMail": "ElizabethJones@fakemail.com",
+    "gitHub": "ElizabethJones",
+    "device": "Mac (Apple)",
+    "location": "India (works US EST)",
+    "phone": "636-251-4254",
+    "description": "Plans for this weekend include turning wine into water.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f71",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000029",
+    "userName": "SamuelJones",
+    "firstName": "Samuel",
+    "lastName": "Jones",
+    "status": "Active",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000005",
+    "eMail": "SamuelJones@fakemail.com",
+    "gitHub": "SamuelJones",
+    "device": "Windows",
+    "location": "Asheville, NC",
+    "phone": "834-115-6136",
+    "description": "I liked their first two albums but changed my mind after that charity gig.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f72",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "people",
+    "_id": "aaaa00000000000000000030",
+    "userName": "JacobJones",
+    "firstName": "Jacob",
+    "lastName": "Jones",
+    "status": "Archived",
+    "roles": [
+      "Member"
+    ],
+    "partnerId": "bbbb00000000000000000003",
+    "eMail": "JacobJones@fakemail.com",
+    "gitHub": "JacobJones",
+    "device": "Linux",
+    "location": "",
+    "phone": "310-624-3929",
+    "description": "It was always dangerous to drive with him since he insisted the safety cones were a slalom course.",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f73",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000000",
+    "name": "Junior Jobs",
+    "status": "Inactive",
+    "description": "Members that are looking for junior level jobs",
+    "contacts": [
+      "aaaa00000000000000000003",
+      "aaaa00000000000000000001"
+    ],
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f4c",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000001",
+    "name": "Enok",
+    "status": "Archived",
+    "description": "Members that found us on Enok",
+    "url": "https://www.enok.co/",
+    "contacts": [
+      "aaaa00000000000000000005",
+      "aaaa00000000000000000006"
+    ],
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f4d",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000002",
+    "name": "Google Search",
+    "status": "Active",
+    "description": "Members that found us on Google"
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000003",
+    "name": "LinkedIn",
+    "status": "Active",
+    "description": "Members that found us on LinkedIn"
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000004",
+    "name": "Persevere",
+    "status": "Active",
+    "description": "Members that graduated from Persevere",
+    "url": "https://www.perseverenow.org/",
+    "contacts": [
+      "aaaa00000000000000000011",
+      "aaaa00000000000000000012"
+    ],
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f4e",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000005",
+    "name": "Referrals",
+    "status": "Active",
+    "description": "Member Referrals"
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000006",
+    "name": "Asheville Javascript Meetup",
+    "status": "Archived",
+    "description": "Members that found us on Asheville Javascript Meetup",
+    "contacts": [
+      "aaaa00000000000000000013",
+      "aaaa00000000000000000014"
+    ],
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f4f",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "partners",
+    "_id": "bbbb00000000000000000007",
+    "name": "Greenville Women Who Code",
+    "status": "Inactive",
+    "description": "Members that found us with Greenville",
+    "contacts": [
+      "aaaa00000000000000000019",
+      "aaaa00000000000000000020"
+    ]
+  },
+  {
+    "collection": "reviews",
+    "_id": "abcd00000000000000000001",
+    "resourceId": "cccc00000000000000000001",
+    "personId": "cccc00000000000000000002",
+    "review": "Review 1",
+    "rating": 1
+  },
+  {
+    "collection": "reviews",
+    "_id": "abcd00000000000000000002",
+    "resourceId": "cccc00000000000000000002",
+    "personId": "cccc00000000000000000002",
+    "review": "Review 2",
+    "rating": 1
+  },
+  {
+    "collection": "reviews",
+    "_id": "abcd00000000000000000003",
+    "resourceId": "cccc00000000000000000002",
+    "personId": "cccc00000000000000000002",
+    "review": "Review 3",
+    "rating": 1
+  },
+  {
+    "collection": "reviews",
+    "_id": "abcd00000000000000000004",
+    "resourceId": "cccc00000000000000000002",
+    "personId": "cccc00000000000000000002",
+    "review": "Review 4",
+    "rating": 1
+  },
+  {
+    "collection": "plans",
+    "_id": "eeff00000000000000000002",
+    "name": "Introductions",
+    "description": "The initial discovery call",
+    "status": "Active",
+    "checklist": [
+      {
+        "type": "Check",
+        "prompt": "Introductions",
+        "options": [
+          "Mike",
+          "Institute"
+        ]
+      },
+      {
+        "type": "Text",
+        "prompt": "Tell me about you",
+        "options": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Who is involved",
+        "options": [
+          "Spouse",
+          "Children",
+          "Extended Family",
+          "OTHER"
+        ]
+      },
+      {
+        "type": "Text",
+        "prompt": "What's happening now, why?",
+        "options": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What matters most?",
+        "options": [
+          "Employment",
+          "OTHER"
+        ]
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Onboarding Scheduled"
+        ]
+      },
+      {
+        "type": "Text",
+        "prompt": "GitHub ID",
+        "options": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Discord ID",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "plans",
+    "_id": "eeff00000000000000000003",
+    "name": "Onboarding",
+    "description": "The initial coaching session after introductions",
+    "status": "Active",
+    "checklist": [
+      {
+        "type": "Check",
+        "prompt": "Review",
+        "options": [
+          "Agile Manifesto",
+          "Craftsmanship Manifesto",
+          "Design Thinking",
+          "Toolkit",
+          "Odin",
+          "Engineerkit"
+        ]
+      },
+      {
+        "type": "Radio",
+        "prompt": "Choose One",
+        "options": [
+          "One",
+          "Two",
+          "Three"
+        ]
+      },
+      {
+        "type": "Text",
+        "prompt": "What are your goals (6-month, 1-yr)",
+        "options": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Commitment hrs/week",
+        "options": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Recurring Invite"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "plans",
+    "_id": "eeff00000000000000000004",
+    "name": "Encounter",
+    "description": "A normal encounter",
+    "status": "Active",
+    "checklist": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ]
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ]
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ]
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ]
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "skills",
+    "_id": "bbbb00000000000000000002",
+    "name": "Skill-1",
+    "status": "Active",
+    "description": "A Generalist skill for a Candidate Engineer",
+    "mastery": "Candidate",
+    "speciality": "Generalist",
+    "lastSaved": {
+      "atTime": "2024-02-26T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc4",
+      "fromIp": "192.168.1.2",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "skills",
+    "_id": "bbbb00000000000000000003",
+    "name": "Skill-2",
+    "status": "Active",
+    "description": "A UI/UX Engineer skill for a Apprentice Engineer",
+    "mastery": "Apprentice",
+    "speciality": "UI/UX Engineer",
+    "lastSaved": {
+      "atTime": "2024-02-27T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc5",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000001",
+    "date": "2024-01-01T00:00:00.000Z",
+    "personId": "aaaa00000000000000000004",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000002",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Introductions",
+        "options": [
+          "Mike",
+          "Institute"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Tell me about you",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Who is involved",
+        "options": [
+          "Spouse",
+          "Children",
+          "Extended Family",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What's happening now, why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What matters most?",
+        "options": [
+          "Employment",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Onboarding Scheduled"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "GitHub ID",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Discord ID",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000002",
+    "date": "2024-01-08T00:00:00.000Z",
+    "personId": "aaaa00000000000000000004",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000003",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Review",
+        "options": [
+          "Agile Manifesto",
+          "Craftsmanship Manifesto",
+          "Design Thinking",
+          "Toolkit",
+          "Odin",
+          "Engineerkit"
+        ],
+        "values": []
+      },
+      {
+        "type": "Radio",
+        "prompt": "Choose One",
+        "options": [
+          "One",
+          "Two",
+          "Three"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What are your goals (6-month, 1-yr)",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Commitment hrs/week",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Recurring Invite"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000003",
+    "date": "2024-01-15T00:00:00.000Z",
+    "personId": "aaaa00000000000000000004",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000004",
+    "date": "2024-01-22T00:00:00.000Z",
+    "personId": "aaaa00000000000000000004",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000005",
+    "date": "2024-03-01T00:00:00.000Z",
+    "personId": "aaaa00000000000000000012",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000002",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Introductions",
+        "options": [
+          "Mike",
+          "Institute"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Tell me about you",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Who is involved",
+        "options": [
+          "Spouse",
+          "Children",
+          "Extended Family",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What's happening now, why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What matters most?",
+        "options": [
+          "Employment",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Onboarding Scheduled"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "GitHub ID",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Discord ID",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000006",
+    "date": "2024-03-08T00:00:00.000Z",
+    "personId": "aaaa00000000000000000012",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000003",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Review",
+        "options": [
+          "Agile Manifesto",
+          "Craftsmanship Manifesto",
+          "Design Thinking",
+          "Toolkit",
+          "Odin",
+          "Engineerkit"
+        ],
+        "values": []
+      },
+      {
+        "type": "Radio",
+        "prompt": "Choose One",
+        "options": [
+          "One",
+          "Two",
+          "Three"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What are your goals (6-month, 1-yr)",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Commitment hrs/week",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Recurring Invite"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000007",
+    "date": "2024-03-15T00:00:00.000Z",
+    "personId": "aaaa00000000000000000012",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000008",
+    "date": "2024-03-22T00:00:00.000Z",
+    "personId": "aaaa00000000000000000012",
+    "mentorId": "aaaa00000000000000000027",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000009",
+    "date": "2024-10-23T00:00:00.000Z",
+    "personId": "aaaa00000000000000000022",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000002",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Introductions",
+        "options": [
+          "Mike",
+          "Institute"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Tell me about you",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Who is involved",
+        "options": [
+          "Spouse",
+          "Children",
+          "Extended Family",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What's happening now, why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What matters most?",
+        "options": [
+          "Employment",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Onboarding Scheduled"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "GitHub ID",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Discord ID",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000010",
+    "date": "2024-10-30T00:00:00.000Z",
+    "personId": "aaaa00000000000000000022",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000003",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Review",
+        "options": [
+          "Agile Manifesto",
+          "Craftsmanship Manifesto",
+          "Design Thinking",
+          "Toolkit",
+          "Odin",
+          "Engineerkit"
+        ],
+        "values": []
+      },
+      {
+        "type": "Radio",
+        "prompt": "Choose One",
+        "options": [
+          "One",
+          "Two",
+          "Three"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What are your goals (6-month, 1-yr)",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Commitment hrs/week",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Recurring Invite"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000011",
+    "date": "2024-11-06T00:00:00.000Z",
+    "personId": "aaaa00000000000000000022",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000012",
+    "date": "2024-11-13T00:00:00.000Z",
+    "personId": "aaaa00000000000000000022",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000013",
+    "date": "2024-11-20T00:00:00.000Z",
+    "personId": "aaaa00000000000000000022",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000014",
+    "date": "2023-12-05T00:00:00.000Z",
+    "personId": "aaaa00000000000000000018",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000002",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Introductions",
+        "options": [
+          "Mike",
+          "Institute"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Tell me about you",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Who is involved",
+        "options": [
+          "Spouse",
+          "Children",
+          "Extended Family",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What's happening now, why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What matters most?",
+        "options": [
+          "Employment",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Onboarding Scheduled"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "GitHub ID",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Discord ID",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000015",
+    "date": "2023-12-12T00:00:00.000Z",
+    "personId": "aaaa00000000000000000018",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000003",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Review",
+        "options": [
+          "Agile Manifesto",
+          "Craftsmanship Manifesto",
+          "Design Thinking",
+          "Toolkit",
+          "Odin",
+          "Engineerkit"
+        ],
+        "values": []
+      },
+      {
+        "type": "Radio",
+        "prompt": "Choose One",
+        "options": [
+          "One",
+          "Two",
+          "Three"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What are your goals (6-month, 1-yr)",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Commitment hrs/week",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Recurring Invite"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000016",
+    "date": "2023-12-19T00:00:00.000Z",
+    "personId": "aaaa00000000000000000018",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000017",
+    "date": "2023-12-26T00:00:00.000Z",
+    "personId": "aaaa00000000000000000018",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000018",
+    "date": "2024-01-02T00:00:00.000Z",
+    "personId": "aaaa00000000000000000018",
+    "mentorId": "aaaa00000000000000000007",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000019",
+    "date": "2023-11-01T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000002",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Introductions",
+        "options": [
+          "Mike",
+          "Institute"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Tell me about you",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Who is involved",
+        "options": [
+          "Spouse",
+          "Children",
+          "Extended Family",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What's happening now, why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What matters most?",
+        "options": [
+          "Employment",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Onboarding Scheduled"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "GitHub ID",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Discord ID",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000020",
+    "date": "2023-11-08T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000003",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "Review",
+        "options": [
+          "Agile Manifesto",
+          "Craftsmanship Manifesto",
+          "Design Thinking",
+          "Toolkit",
+          "Odin",
+          "Engineerkit"
+        ],
+        "values": []
+      },
+      {
+        "type": "Radio",
+        "prompt": "Choose One",
+        "options": [
+          "One",
+          "Two",
+          "Three"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "What are your goals (6-month, 1-yr)",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "Commitment hrs/week",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "Agreements",
+        "options": [
+          "Now Scope",
+          "Recurring Invite"
+        ]
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000021",
+    "date": "2023-11-15T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000022",
+    "date": "2023-11-22T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000023",
+    "date": "2023-11-29T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000024",
+    "date": "2023-12-06T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000025",
+    "date": "2023-12-13T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000026",
+    "date": "2023-12-20T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000027",
+    "date": "2023-12-27T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000028",
+    "date": "2024-01-03T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "encounters",
+    "_id": "eeee00000000000000000029",
+    "date": "2024-01-10T00:00:00.000Z",
+    "personId": "aaaa00000000000000000024",
+    "mentorId": "aaaa00000000000000000005",
+    "planId": "eeff00000000000000000004",
+    "status": "Active",
+    "observations": [
+      {
+        "type": "Check",
+        "prompt": "What do you want to focus on today?",
+        "options": [
+          "Now Questions",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you describe what's happeningn now? Why?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "During out time together, what woud you like to acomplish?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What are some ideas to try, what one thing can we start with?",
+        "options": [
+          "Now Scope",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Check",
+        "prompt": "What would you like to be able to share next time?",
+        "options": [
+          "New Now",
+          "OTHER"
+        ],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How are your discoveries making a difference?",
+        "options": [],
+        "values": []
+      },
+      {
+        "type": "Text",
+        "prompt": "How would you like to close today?",
+        "options": []
+      }
+    ]
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000002",
+    "status": "Active",
+    "name": "ComputerHistoryTimelineA",
+    "description": "Computer History Timeline Article",
+    "link": "https://somevalidlink02.com",
+    "duration": 25,
+    "skills": [
+      "bbbb00000000000000000005"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lesson",
+      "Tutorial",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f74",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000003",
+    "status": "Active",
+    "name": "HistoryofComputingArticl",
+    "description": "History of Computing Article",
+    "link": "https://somevalidlink03.com",
+    "duration": 333,
+    "skills": [
+      "bbbb00000000000000000003"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Reference",
+      "User Guide",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f75",
+      "fromIp": "192.168.1.3",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000004",
+    "status": "Active",
+    "name": "PiratesofSiliconValleyFi",
+    "description": "Pirates of Silicon Valley Film",
+    "link": "https://somevalidlink04.com",
+    "duration": 219,
+    "skills": [
+      "bbbb00000000000000000004"
+    ],
+    "tags": [
+      "Exam",
+      "Lecture",
+      "Video",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f76",
+      "fromIp": "192.168.1.4",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000005",
+    "status": "Active",
+    "name": "Apple1984SuperBowlCommer",
+    "description": "Apple 1984 Super Bowl Commercial Video",
+    "link": "https://somevalidlink05.com",
+    "duration": 367,
+    "skills": [
+      "bbbb00000000000000000004"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "User Guide",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f77",
+      "fromIp": "192.168.1.5",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000006",
+    "status": "Active",
+    "name": "BretVictorTheFutureofPro",
+    "description": "Bret Victor The Future of Programming Video",
+    "link": "https://somevalidlink06.com",
+    "duration": 493,
+    "skills": [
+      "bbbb00000000000000000004"
+    ],
+    "tags": [
+      "Lecture",
+      "Lesson",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f78",
+      "fromIp": "192.168.1.6",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000007",
+    "status": "Active",
+    "name": "AwesomeComputerHistoryRe",
+    "description": "Awesome Computer History Resource",
+    "link": "https://somevalidlink07.com",
+    "duration": 418,
+    "skills": [
+      "bbbb00000000000000000005"
+    ],
+    "tags": [
+      "Book",
+      "Lecture",
+      "Reference",
+      "User Guide",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f79",
+      "fromIp": "192.168.1.7",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000008",
+    "status": "Active",
+    "name": "JeanBartikandtheENIACWom",
+    "description": "Jean Bartik and the ENIAC Women Video",
+    "link": "https://somevalidlink08.com",
+    "duration": 188,
+    "skills": [
+      "bbbb00000000000000000005"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Tutorial",
+      "User Guide",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f7a",
+      "fromIp": "192.168.1.8",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000009",
+    "status": "Active",
+    "name": "ExploringHowComputersWor",
+    "description": "Exploring How Computers Work Video",
+    "link": "https://somevalidlink09.com",
+    "duration": 3,
+    "skills": [
+      "bbbb00000000000000000007"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "Tutorial",
+      "Video",
+      "UI/UX"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f7b",
+      "fromIp": "192.168.1.9",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000010",
+    "status": "Active",
+    "name": "DigitalLogicSimTool",
+    "description": "Digital Logic Sim Tool",
+    "link": "https://somevalidlink10.com",
+    "duration": 373,
+    "skills": [
+      "bbbb00000000000000000006"
+    ],
+    "tags": [
+      "$",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f7c",
+      "fromIp": "192.168.1.10",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000011",
+    "status": "Active",
+    "name": "HistoryandTheoryofElectr",
+    "description": "History and Theory of Electricity Video",
+    "link": "https://somevalidlin11.com",
+    "duration": 205,
+    "skills": [
+      "bbbb00000000000000000008"
+    ],
+    "tags": [
+      "Article",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f7d",
+      "fromIp": "192.168.1.11",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000012",
+    "status": "Active",
+    "name": "Buildingan8-bitcomputerV",
+    "description": "Building an 8-bit computer Video Series",
+    "link": "https://somevalidlink12.com",
+    "duration": 17,
+    "skills": [
+      "bbbb00000000000000000007"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f7e",
+      "fromIp": "192.168.1.12",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000013",
+    "status": "Active",
+    "name": "nand2tetris:buildingacom",
+    "description": "nand2tetris: building a computer from first principles Course",
+    "link": "https://somevalidlink13.com",
+    "duration": 260,
+    "skills": [
+      "bbbb00000000000000000006"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lesson",
+      "Tutorial",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f7f",
+      "fromIp": "192.168.1.13",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000014",
+    "status": "Active",
+    "name": "8StandardComputerCompone",
+    "description": "8 Standard Computer Components Article",
+    "link": "https://somevalidlink14.com",
+    "duration": 19,
+    "skills": [
+      "bbbb00000000000000000007"
+    ],
+    "tags": [
+      "Interactive",
+      "Lecture",
+      "Tutorial",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f80",
+      "fromIp": "192.168.1.14",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000015",
+    "status": "Active",
+    "name": "DigitalOceanLearningLibr",
+    "description": "DigitalOcean Learning Library Resource",
+    "link": "https://somevalidlink15.com",
+    "duration": 8,
+    "skills": [
+      "bbbb00000000000000000010"
+    ],
+    "tags": [
+      "Article",
+      "Lesson",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f81",
+      "fromIp": "192.168.1.15",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000016",
+    "status": "Active",
+    "name": "Dockerin100SecondsVideo",
+    "description": "Docker in 100 Seconds Video",
+    "link": "https://somevalidlink.16.com",
+    "duration": 419,
+    "skills": [
+      "bbbb00000000000000000010"
+    ],
+    "tags": [
+      "Exam",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f82",
+      "fromIp": "192.168.1.16",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000017",
+    "status": "Active",
+    "name": "LearnDockerin7EasyStepsV",
+    "description": "Learn Docker in 7 Easy Steps Video",
+    "link": "https://somevalidlink.17.com",
+    "duration": 219,
+    "skills": [
+      "bbbb00000000000000000009"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Tutorial",
+      "Video"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f83",
+      "fromIp": "192.168.1.17",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000018",
+    "status": "Active",
+    "name": "UnderstandingOperatingSy",
+    "description": "Understanding Operating Systems Article",
+    "link": "https://somevalidlink.18.com",
+    "duration": 100,
+    "skills": [
+      "bbbb00000000000000000009"
+    ],
+    "tags": [
+      "Article",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f84",
+      "fromIp": "192.168.1.18",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000019",
+    "status": "Active",
+    "name": "UsingDockerDevContainers",
+    "description": "Using Docker Dev Containers Resource",
+    "link": "https://somevalidlink.19.com",
+    "duration": 233,
+    "skills": [
+      "bbbb00000000000000000010"
+    ],
+    "tags": [
+      "$",
+      "Exam",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f85",
+      "fromIp": "192.168.1.19",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000020",
+    "status": "Active",
+    "name": "VirtualBoxTool",
+    "description": "VirtualBox Tool",
+    "link": "https://somevalidlink.20.com",
+    "duration": 464,
+    "skills": [
+      "bbbb00000000000000000010"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lesson",
+      "Reference",
+      "User Guide",
+      "Video",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f86",
+      "fromIp": "192.168.1.20",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000021",
+    "status": "Active",
+    "name": "TheProgrammingProcessArt",
+    "description": "The Programming Process Article",
+    "link": "https://somevalidlink.21.com",
+    "duration": 141,
+    "skills": [
+      "bbbb00000000000000000014"
+    ],
+    "tags": [
+      "Article",
+      "Lesson",
+      "Reference",
+      "User Guide",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f87",
+      "fromIp": "192.168.1.21",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000022",
+    "status": "Active",
+    "name": "Howdocomputersreadcode?V",
+    "description": "How do computers read code? Video",
+    "link": "https://somevalidlink.22.com",
+    "duration": 160,
+    "skills": [
+      "bbbb00000000000000000013"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "Video",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f88",
+      "fromIp": "192.168.1.22",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000023",
+    "status": "Active",
+    "name": "rbenvTool",
+    "description": "rbenv Tool",
+    "link": "https://somevalidlink.23.com",
+    "duration": 143,
+    "skills": [
+      "bbbb00000000000000000014"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Reference"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f89",
+      "fromIp": "192.168.1.23",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000024",
+    "status": "Active",
+    "name": "pyenvTool",
+    "description": "pyenv Tool",
+    "link": "https://somevalidlink.24.com",
+    "duration": 388,
+    "skills": [
+      "bbbb00000000000000000012"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Interactive",
+      "Lecture",
+      "User Guide",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f8a",
+      "fromIp": "192.168.1.24",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000025",
+    "status": "Active",
+    "name": "nodenvTool",
+    "description": "nodenv Tool",
+    "link": "https://somevalidlink.25.com",
+    "duration": 170,
+    "skills": [
+      "bbbb00000000000000000013"
+    ],
+    "tags": [
+      "$",
+      "Exam",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "User Guide",
+      "UI/UX"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f8b",
+      "fromIp": "192.168.1.25",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000026",
+    "status": "Active",
+    "name": "goenvTool",
+    "description": "goenv Tool",
+    "link": "https://somevalidlink.26.com",
+    "duration": 304,
+    "skills": [
+      "bbbb00000000000000000014"
+    ],
+    "tags": [
+      "Exam",
+      "Lecture",
+      "Lesson",
+      "Tutorial",
+      "User Guide",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f8c",
+      "fromIp": "192.168.1.26",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000027",
+    "status": "Active",
+    "name": "rustupTool",
+    "description": "rustup Tool",
+    "link": "https://somevalidlink.27.com",
+    "duration": 506,
+    "skills": [
+      "bbbb00000000000000000014"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Exam",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f8d",
+      "fromIp": "192.168.1.27",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000028",
+    "status": "Active",
+    "name": "C#languageversioning",
+    "description": "C# language versioning",
+    "link": "https://somevalidlink.28.com",
+    "duration": 277,
+    "skills": [
+      "bbbb00000000000000000014"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Lesson",
+      "Tutorial",
+      "User Guide",
+      "UI/UX"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f8e",
+      "fromIp": "192.168.1.28",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000029",
+    "status": "Active",
+    "name": "ComputerBasicsCourseCour",
+    "description": "Computer Basics Course Course ($)",
+    "link": "https://somevalidlink.29.com",
+    "duration": 75,
+    "skills": [
+      "bbbb00000000000000000014"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Lesson",
+      "Reference",
+      "User Guide",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f8f",
+      "fromIp": "192.168.1.29",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000030",
+    "status": "Active",
+    "name": "BrowserStacklistofplatfo",
+    "description": "BrowserStack list of platforms Resource",
+    "link": "https://somevalidlink.30.com",
+    "duration": 82,
+    "skills": [
+      "bbbb00000000000000000016"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f90",
+      "fromIp": "192.168.1.30",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000031",
+    "status": "Active",
+    "name": "ComputingplatformArticle",
+    "description": "Computing platform Article",
+    "link": "https://somevalidlink.31.com",
+    "duration": 94,
+    "skills": [
+      "bbbb00000000000000000017"
+    ],
+    "tags": [
+      "$",
+      "Lecture",
+      "Lesson",
+      "Tutorial",
+      "User Guide",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f91",
+      "fromIp": "192.168.1.31",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000032",
+    "status": "Active",
+    "name": "Structuredvs.Unstructure",
+    "description": "Structured vs. Unstructured Data Article",
+    "link": "https://somevalidlink.32.com",
+    "duration": 68,
+    "skills": [
+      "bbbb00000000000000000020"
+    ],
+    "tags": [
+      "Book",
+      "Interactive",
+      "Lecture",
+      "User Guide",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f92",
+      "fromIp": "192.168.1.32",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000033",
+    "status": "Active",
+    "name": "7DatabaseParadigmsVideo",
+    "description": "7 Database Paradigms Video",
+    "link": "https://somevalidlink.33.com",
+    "duration": 312,
+    "skills": [
+      "bbbb00000000000000000022"
+    ],
+    "tags": [
+      "Article",
+      "Interactive",
+      "Tutorial",
+      "Video",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f93",
+      "fromIp": "192.168.1.33",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000034",
+    "status": "Active",
+    "name": "AWSDatabasesResource",
+    "description": "AWS Databases Resource",
+    "link": "https://somevalidlink.34.com",
+    "duration": 230,
+    "skills": [
+      "bbbb00000000000000000023"
+    ],
+    "tags": [
+      "Lesson",
+      "Reference",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f94",
+      "fromIp": "192.168.1.34",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000035",
+    "status": "Active",
+    "name": "AWSStorageResource",
+    "description": "AWS Storage Resource",
+    "link": "https://somevalidlink.35.com",
+    "duration": 342,
+    "skills": [
+      "bbbb00000000000000000023"
+    ],
+    "tags": [
+      "$",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Tutorial",
+      "User Guide",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f95",
+      "fromIp": "192.168.1.35",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000036",
+    "status": "Active",
+    "name": "CloudFirestoreTool",
+    "description": "Cloud Firestore Tool",
+    "link": "https://somevalidlink.36.com",
+    "duration": 154,
+    "skills": [
+      "bbbb00000000000000000023"
+    ],
+    "tags": [
+      "$",
+      "Book",
+      "Exam",
+      "Lecture",
+      "User Guide"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f96",
+      "fromIp": "192.168.1.36",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000037",
+    "status": "Active",
+    "name": "DatabasenormalizationRes",
+    "description": "Database normalization Resource",
+    "link": "https://somevalidlink.37.com",
+    "duration": 280,
+    "skills": [
+      "bbbb00000000000000000025"
+    ],
+    "tags": [
+      "Book",
+      "Exam",
+      "Lecture",
+      "Tutorial",
+      "User Guide",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f97",
+      "fromIp": "192.168.1.37",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000038",
+    "status": "Active",
+    "name": "NormalDataFormsVideo",
+    "description": "Normal Data Forms Video",
+    "link": "https://somevalidlink.38.com",
+    "duration": 354,
+    "skills": [
+      "bbbb00000000000000000025"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f98",
+      "fromIp": "192.168.1.38",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000039",
+    "status": "Active",
+    "name": "SQLExplainedin100Seconds",
+    "description": "SQL Explained in 100 Seconds Video",
+    "link": "https://somevalidlink.39.com",
+    "duration": 70,
+    "skills": [
+      "bbbb00000000000000000024"
+    ],
+    "tags": [
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "User Guide",
+      "Video",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f99",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000040",
+    "status": "Active",
+    "name": "SQLplaygroundTool",
+    "description": "SQL playground Tool",
+    "link": "https://somevalidlink.40.com",
+    "duration": 88,
+    "skills": [
+      "bbbb00000000000000000025"
+    ],
+    "tags": [
+      "$",
+      "Interactive",
+      "Lecture",
+      "Tutorial",
+      "User Guide",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f9a",
+      "fromIp": "192.168.1.40",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000041",
+    "status": "Active",
+    "name": "SQLZOOTutorial",
+    "description": "SQLZOO Tutorial",
+    "link": "https://somevalidlink.41.com",
+    "duration": 363,
+    "skills": [
+      "bbbb00000000000000000025"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Lesson",
+      "User Guide",
+      "Video",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f9b",
+      "fromIp": "192.168.1.41",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000042",
+    "status": "Active",
+    "name": "ModifyingDatawithSQLCour",
+    "description": "Modifying Data with SQL Course ($)",
+    "link": "https://somevalidlink.42.com",
+    "duration": 46,
+    "skills": [
+      "bbbb00000000000000000025"
+    ],
+    "tags": [
+      "$",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lesson",
+      "Tutorial",
+      "Video"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f9c",
+      "fromIp": "192.168.1.42",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000043",
+    "status": "Active",
+    "name": "QueryingRelationalDataba",
+    "description": "Querying Relational Databases Course ($)",
+    "link": "https://somevalidlink.43.com",
+    "duration": 210,
+    "skills": [
+      "bbbb00000000000000000025"
+    ],
+    "tags": [
+      "Exam",
+      "Interactive",
+      "Reference",
+      "User Guide",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f9d",
+      "fromIp": "192.168.1.43",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000044",
+    "status": "Active",
+    "name": "SQLBasicsCourse($)",
+    "description": "SQL Basics Course ($)",
+    "link": "https://somevalidlink.44.com",
+    "duration": 195,
+    "skills": [
+      "bbbb00000000000000000025"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Interactive",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "UI/UX"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f9e",
+      "fromIp": "192.168.1.44",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000045",
+    "status": "Active",
+    "name": "MissingSemester:DataWran",
+    "description": "Missing Semester: Data Wrangling Video",
+    "link": "https://somevalidlink.45.com",
+    "duration": 363,
+    "skills": [
+      "bbbb00000000000000000028"
+    ],
+    "tags": [
+      "Lesson",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8f9f",
+      "fromIp": "192.168.1.45",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000046",
+    "status": "Active",
+    "name": "Regexin100SecondsVideo",
+    "description": "Regex in 100 Seconds Video",
+    "link": "https://somevalidlink.46.com",
+    "duration": 125,
+    "skills": [
+      "bbbb00000000000000000027"
+    ],
+    "tags": [
+      "$",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "Tutorial",
+      "User Guide"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa0",
+      "fromIp": "192.168.1.46",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000047",
+    "status": "Active",
+    "name": "WhatisETL?Article",
+    "description": "What is ETL? Article",
+    "link": "https://somevalidlink.47.com",
+    "duration": 113,
+    "skills": [
+      "bbbb00000000000000000028"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Lecture",
+      "Lesson",
+      "Tutorial",
+      "UI/UX"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa1",
+      "fromIp": "192.168.1.47",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000048",
+    "status": "Active",
+    "name": "3TipsThatWillSimplifyYou",
+    "description": "3 Tips That Will Simplify Your Application State Management Article",
+    "link": "https://somevalidlink.48.com",
+    "duration": 209,
+    "skills": [
+      "bbbb00000000000000000031"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Interactive",
+      "Lesson",
+      "Reference",
+      "Video",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa2",
+      "fromIp": "192.168.1.48",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000049",
+    "status": "Active",
+    "name": "CachinginaPWATutorial",
+    "description": "Caching in a PWA Tutorial",
+    "link": "https://somevalidlink.49.com",
+    "duration": 123,
+    "skills": [
+      "bbbb00000000000000000031"
+    ],
+    "tags": [
+      "Interactive",
+      "Lecture",
+      "User Guide",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa3",
+      "fromIp": "192.168.1.49",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000050",
+    "status": "Active",
+    "name": "Event-drivenarchitecture",
+    "description": "Event-driven architecture Article",
+    "link": "https://somevalidlink.50.com",
+    "duration": 393,
+    "skills": [
+      "bbbb00000000000000000031"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Exam",
+      "Interactive",
+      "User Guide",
+      "UI/UX"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa4",
+      "fromIp": "192.168.1.50",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000051",
+    "status": "Active",
+    "name": "Implementingasimplestate",
+    "description": "Implementing a simple state machine library in JavaScript Article",
+    "link": "https://somevalidlink.51.com",
+    "duration": 213,
+    "skills": [
+      "bbbb00000000000000000031"
+    ],
+    "tags": [
+      "$",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "User Guide",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa5",
+      "fromIp": "192.168.1.51",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000052",
+    "status": "Active",
+    "name": "WhatdoyoumeanbyEvent",
+    "description": "What do you mean by Event-Driven? Article",
+    "link": "https://somevalidlink.52.com",
+    "duration": 291,
+    "skills": [
+      "bbbb00000000000000000031"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "Video"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa6",
+      "fromIp": "192.168.1.52",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000053",
+    "status": "Active",
+    "name": "Whatiscaching?Article",
+    "description": "What is caching? Article",
+    "link": "https://somevalidlink.53.com",
+    "duration": 475,
+    "skills": [
+      "bbbb00000000000000000032"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Exam",
+      "Lecture",
+      "Lesson",
+      "User Guide",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa7",
+      "fromIp": "192.168.1.53",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000054",
+    "status": "Active",
+    "name": "HowThisCourseWillWork",
+    "description": "How This Course Will Work",
+    "link": "https://somevalidlink.54.com",
+    "duration": 356,
+    "skills": [
+      "bbbb00000000000000000035"
+    ],
+    "tags": [
+      "$",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa8",
+      "fromIp": "192.168.1.54",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000055",
+    "status": "Active",
+    "name": "IntroductiontoWebDevelop",
+    "description": "Introduction to Web Development",
+    "link": "https://somevalidlink.55.com",
+    "duration": 70,
+    "skills": [
+      "bbbb00000000000000000033"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Lecture",
+      "Reference"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fa9",
+      "fromIp": "192.168.1.55",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000056",
+    "status": "Active",
+    "name": "MotivationandMindset",
+    "description": "Motivation and Mindset",
+    "link": "https://somevalidlink.56.com",
+    "duration": 307,
+    "skills": [
+      "bbbb00000000000000000033"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Exam",
+      "Lesson",
+      "Reference",
+      "User Guide",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8faa",
+      "fromIp": "192.168.1.56",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000057",
+    "status": "Active",
+    "name": "AskingForHelp",
+    "description": "Asking For Help",
+    "link": "https://somevalidlink.57.com",
+    "duration": 330,
+    "skills": [
+      "bbbb00000000000000000034"
+    ],
+    "tags": [
+      "Book",
+      "Interactive",
+      "Reference",
+      "Video",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fab",
+      "fromIp": "192.168.1.57",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000058",
+    "status": "Active",
+    "name": "JointheOdinCommunity",
+    "description": "Join the Odin Community",
+    "link": "https://somevalidlink.58.com",
+    "duration": 217,
+    "skills": [
+      "bbbb00000000000000000035"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Interactive",
+      "Lecture",
+      "Video",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fac",
+      "fromIp": "192.168.1.58",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000059",
+    "status": "Active",
+    "name": "ComputerBasics",
+    "description": "Computer Basics",
+    "link": "https://somevalidlink.59.com",
+    "duration": 105,
+    "skills": [
+      "bbbb00000000000000000038"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Interactive",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fad",
+      "fromIp": "192.168.1.59",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000060",
+    "status": "Active",
+    "name": "HowDoestheWebWork?",
+    "description": "How Does the Web Work?",
+    "link": "https://somevalidlink.60.com",
+    "duration": 362,
+    "skills": [
+      "bbbb00000000000000000036"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "User Guide",
+      "UI/UX"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fae",
+      "fromIp": "192.168.1.60",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000061",
+    "status": "Active",
+    "name": "InstallationOverview",
+    "description": "Installation Overview",
+    "link": "https://somevalidlink.61.com",
+    "duration": 243,
+    "skills": [
+      "bbbb00000000000000000037"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Book",
+      "Lesson",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8faf",
+      "fromIp": "192.168.1.61",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000062",
+    "status": "Active",
+    "name": "Installations",
+    "description": "Installations",
+    "link": "https://somevalidlink.62.com",
+    "duration": 109,
+    "skills": [
+      "bbbb00000000000000000037"
+    ],
+    "tags": [
+      "$",
+      "Exam",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb0",
+      "fromIp": "192.168.1.62",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000063",
+    "status": "Active",
+    "name": "TextEditors",
+    "description": "Text Editors",
+    "link": "https://somevalidlink.63.com",
+    "duration": 137,
+    "skills": [
+      "bbbb00000000000000000038"
+    ],
+    "tags": [
+      "$",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb1",
+      "fromIp": "192.168.1.63",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000064",
+    "status": "Active",
+    "name": "CommandLineBasics",
+    "description": "Command Line Basics",
+    "link": "https://somevalidlink.64.com",
+    "duration": 58,
+    "skills": [
+      "bbbb00000000000000000037"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "User Guide",
+      "Video"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb2",
+      "fromIp": "192.168.1.64",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000065",
+    "status": "Active",
+    "name": "SettingupGit",
+    "description": "Setting up Git",
+    "link": "https://somevalidlink.65.com",
+    "duration": 247,
+    "skills": [
+      "bbbb00000000000000000037"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb3",
+      "fromIp": "192.168.1.65",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000066",
+    "status": "Active",
+    "name": "IntroductiontoGit",
+    "description": "Introduction to Git",
+    "link": "https://somevalidlink.66.com",
+    "duration": 359,
+    "skills": [
+      "bbbb00000000000000000040"
+    ],
+    "tags": [
+      "$",
+      "Book",
+      "Interactive",
+      "Lecture",
+      "User Guide",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb4",
+      "fromIp": "192.168.1.66",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000067",
+    "status": "Active",
+    "name": "GitBasics",
+    "description": "Git Basics",
+    "link": "https://somevalidlink.67.com",
+    "duration": 104,
+    "skills": [
+      "bbbb00000000000000000039"
+    ],
+    "tags": [
+      "Article",
+      "Interactive",
+      "Lecture",
+      "Tutorial",
+      "User Guide",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb5",
+      "fromIp": "192.168.1.67",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000068",
+    "status": "Active",
+    "name": "Introduction",
+    "description": "Introduction",
+    "link": "https://somevalidlink.68.com",
+    "duration": 128,
+    "skills": [
+      "bbbb00000000000000000043"
+    ],
+    "tags": [
+      "Exam",
+      "Tutorial",
+      "User Guide",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb6",
+      "fromIp": "192.168.1.68",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000069",
+    "status": "Active",
+    "name": "Emmet",
+    "description": "Emmet",
+    "link": "https://somevalidlink.69.com",
+    "duration": 465,
+    "skills": [
+      "bbbb00000000000000000043"
+    ],
+    "tags": [
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Reference",
+      "User Guide",
+      "UI/UX",
+      "API"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb7",
+      "fromIp": "192.168.1.69",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000070",
+    "status": "Active",
+    "name": "SVG",
+    "description": "SVG",
+    "link": "https://somevalidlink.70.com",
+    "duration": 48,
+    "skills": [
+      "bbbb00000000000000000043"
+    ],
+    "tags": [
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Reference",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb8",
+      "fromIp": "192.168.1.70",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000071",
+    "status": "Active",
+    "name": "Tables",
+    "description": "Tables",
+    "link": "https://somevalidlink.71.com",
+    "duration": 468,
+    "skills": [
+      "bbbb00000000000000000043"
+    ],
+    "tags": [
+      "Article",
+      "Exam",
+      "Lesson",
+      "User Guide",
+      "UI/UX",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fb9",
+      "fromIp": "192.168.1.71",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000072",
+    "status": "Active",
+    "name": "DefaultStyles",
+    "description": "Default Styles",
+    "link": "https://somevalidlink.72.com",
+    "duration": 480,
+    "skills": [
+      "bbbb00000000000000000046"
+    ],
+    "tags": [
+      "Article",
+      "Lecture",
+      "Lesson",
+      "Tutorial",
+      "User Guide",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fba",
+      "fromIp": "192.168.1.72",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000073",
+    "status": "Active",
+    "name": "CSSUnits",
+    "description": "CSS Units",
+    "link": "https://somevalidlink.73.com",
+    "duration": 518,
+    "skills": [
+      "bbbb00000000000000000047"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Exam",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "API",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fbb",
+      "fromIp": "192.168.1.73",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000074",
+    "status": "Active",
+    "name": "MoreTextStyles",
+    "description": "More Text Styles",
+    "link": "https://somevalidlink.74.com",
+    "duration": 332,
+    "skills": [
+      "bbbb00000000000000000046"
+    ],
+    "tags": [
+      "$",
+      "Exam",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fbc",
+      "fromIp": "192.168.1.74",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000075",
+    "status": "Active",
+    "name": "MoreCSSProperties",
+    "description": "More CSS Properties",
+    "link": "https://somevalidlink.75.com",
+    "duration": 311,
+    "skills": [
+      "bbbb00000000000000000046"
+    ],
+    "tags": [
+      "Book",
+      "Exam",
+      "Lecture",
+      "User Guide",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fbd",
+      "fromIp": "192.168.1.75",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000076",
+    "status": "Active",
+    "name": "AdvancedSelectors",
+    "description": "Advanced Selectors",
+    "link": "https://somevalidlink.76.com",
+    "duration": 358,
+    "skills": [
+      "bbbb00000000000000000047"
+    ],
+    "tags": [
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Reference",
+      "Tutorial",
+      "User Guide"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fbe",
+      "fromIp": "192.168.1.76",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000077",
+    "status": "Active",
+    "name": "Positioning",
+    "description": "Positioning",
+    "link": "https://somevalidlink.77.com",
+    "duration": 524,
+    "skills": [
+      "bbbb00000000000000000045"
+    ],
+    "tags": [
+      "Article",
+      "Lecture",
+      "Reference",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fbf",
+      "fromIp": "192.168.1.77",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000078",
+    "status": "Active",
+    "name": "CSSFunctions",
+    "description": "CSS Functions",
+    "link": "https://somevalidlink.78.com",
+    "duration": 402,
+    "skills": [
+      "bbbb00000000000000000046"
+    ],
+    "tags": [
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lecture",
+      "Lesson",
+      "Reference",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc0",
+      "fromIp": "192.168.1.78",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000079",
+    "status": "Active",
+    "name": "CustomProperties",
+    "description": "Custom Properties",
+    "link": "https://somevalidlink.79.com",
+    "duration": 143,
+    "skills": [
+      "bbbb00000000000000000046"
+    ],
+    "tags": [
+      "Article",
+      "Book",
+      "Exam",
+      "Interactive",
+      "Lesson",
+      "Reference",
+      "Tutorial"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc1",
+      "fromIp": "192.168.1.79",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000080",
+    "status": "Active",
+    "name": "BrowserCompatibility",
+    "description": "Browser Compatibility",
+    "link": "https://somevalidlink.80.com",
+    "duration": 79,
+    "skills": [
+      "bbbb00000000000000000046"
+    ],
+    "tags": [
+      "$",
+      "Article",
+      "Interactive",
+      "Lesson",
+      "Tutorial",
+      "Video",
+      "UI/UX",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc2",
+      "fromIp": "192.168.1.80",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "resources",
+    "_id": "cccc00000000000000000081",
+    "status": "Active",
+    "name": "FrameworksandPreprocesso",
+    "description": "Frameworks and Preprocessors",
+    "link": "https://somevalidlink.81.com",
+    "duration": 288,
+    "skills": [
+      "bbbb00000000000000000045"
+    ],
+    "tags": [
+      "Article",
+      "Interactive",
+      "Lecture",
+      "Tutorial",
+      "User Guide",
+      "Video",
+      "Data"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc3",
+      "fromIp": "192.168.1.81",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000002",
+    "name": "History of Computing",
+    "status": "Active",
+    "description": "With this topic you'll learn about the history of computing and some of the most important events that shaped the Information Age.",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000002",
+      "cccc00000000000000000003",
+      "cccc00000000000000000004",
+      "cccc00000000000000000005",
+      "cccc00000000000000000006",
+      "cccc00000000000000000007",
+      "cccc00000000000000000008"
+    ],
+    "skills": [
+      "bbbb00000000000000000003",
+      "bbbb00000000000000000004",
+      "bbbb00000000000000000005"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc6",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000003",
+    "name": "Hardware",
+    "status": "Active",
+    "description": "With this topic you will learn about the essential computer components and the different roles they play.",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000009",
+      "cccc00000000000000000010",
+      "cccc00000000000000000011",
+      "cccc00000000000000000012",
+      "cccc00000000000000000013",
+      "cccc00000000000000000014"
+    ],
+    "skills": [
+      "bbbb00000000000000000006",
+      "bbbb00000000000000000007",
+      "bbbb00000000000000000008"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc7",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000004",
+    "name": "Operating Systems",
+    "status": "Active",
+    "description": "With this topic you will learn about the underlying software that coordinates the different components of a computer.",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000015",
+      "cccc00000000000000000016",
+      "cccc00000000000000000017",
+      "cccc00000000000000000018",
+      "cccc00000000000000000019",
+      "cccc00000000000000000020"
+    ],
+    "skills": [
+      "bbbb00000000000000000009",
+      "bbbb00000000000000000010",
+      "bbbb00000000000000000011"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc8",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000005",
+    "name": "Runtimes",
+    "status": "Active",
+    "description": "With this topic you will learn about the process of turning human-readable code into commands that the computer can understand.",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000021",
+      "cccc00000000000000000022",
+      "cccc00000000000000000023",
+      "cccc00000000000000000024",
+      "cccc00000000000000000025",
+      "cccc00000000000000000026",
+      "cccc00000000000000000027",
+      "cccc00000000000000000028",
+      "cccc00000000000000000029"
+    ],
+    "skills": [
+      "bbbb00000000000000000012",
+      "bbbb00000000000000000013",
+      "bbbb00000000000000000014"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fc9",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000006",
+    "name": "Spectrum of Platforms",
+    "status": "Active",
+    "description": "With this topic you will learn about the different combinations of hardware operating systems and runtimes used to run software applications.",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000030",
+      "cccc00000000000000000031"
+    ],
+    "skills": [
+      "bbbb00000000000000000015",
+      "bbbb00000000000000000016",
+      "bbbb00000000000000000017"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fca",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000007",
+    "name": "Types of Data",
+    "status": "Active",
+    "description": "With this topic you'll learn about the spectrum of unstructured to structured data types and how to classify data correctly.",
+    "category": "Data Management",
+    "resources": [
+      "cccc00000000000000000032"
+    ],
+    "skills": [
+      "bbbb00000000000000000018",
+      "bbbb00000000000000000019",
+      "bbbb00000000000000000020"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fcb",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000008",
+    "name": "Data Storage",
+    "status": "Active",
+    "description": "With this topic you'll learn techniques to store data of all types for usage in an application.",
+    "category": "Data Management",
+    "resources": [
+      "cccc00000000000000000033",
+      "cccc00000000000000000034",
+      "cccc00000000000000000035",
+      "cccc00000000000000000036"
+    ],
+    "skills": [
+      "bbbb00000000000000000021",
+      "bbbb00000000000000000022",
+      "bbbb00000000000000000023"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fcc",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000009",
+    "name": "Data Manipulation",
+    "status": "Active",
+    "description": "With this topic you'll learn how to interact with and manipulate data from storage providers using techniques such as SQL or SSH.",
+    "category": "Data Management",
+    "resources": [
+      "cccc00000000000000000037",
+      "cccc00000000000000000038",
+      "cccc00000000000000000039",
+      "cccc00000000000000000040",
+      "cccc00000000000000000041",
+      "cccc00000000000000000042",
+      "cccc00000000000000000043",
+      "cccc00000000000000000044"
+    ],
+    "skills": [
+      "bbbb00000000000000000024",
+      "bbbb00000000000000000025",
+      "bbbb00000000000000000026"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fcd",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000010",
+    "name": "Data Wrangling",
+    "status": "Active",
+    "description": "With this topic you'll learn to convert data from one type to another using data wrangling techniques.",
+    "category": "Data Management",
+    "resources": [
+      "cccc00000000000000000045",
+      "cccc00000000000000000046",
+      "cccc00000000000000000047"
+    ],
+    "skills": [
+      "bbbb00000000000000000027",
+      "bbbb00000000000000000028",
+      "bbbb00000000000000000029"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fce",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000011",
+    "name": "Managing State",
+    "status": "Active",
+    "description": "With this topic you'll learn about effectively using different patterns to manage the state in an application.",
+    "category": "Data Management",
+    "resources": [
+      "cccc00000000000000000048",
+      "cccc00000000000000000049",
+      "cccc00000000000000000050",
+      "cccc00000000000000000051",
+      "cccc00000000000000000052",
+      "cccc00000000000000000053"
+    ],
+    "skills": [
+      "bbbb00000000000000000030",
+      "bbbb00000000000000000031",
+      "bbbb00000000000000000032"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fcf",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000012",
+    "name": "OdinIntro",
+    "status": "Active",
+    "description": "An introduction to Web Development",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000054",
+      "cccc00000000000000000055",
+      "cccc00000000000000000056",
+      "cccc00000000000000000057",
+      "cccc00000000000000000058"
+    ],
+    "skills": [
+      "bbbb00000000000000000033",
+      "bbbb00000000000000000034",
+      "bbbb00000000000000000035"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fd0",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000013",
+    "name": "WebDevSetup",
+    "status": "Active",
+    "description": "Installing and configuring a developers environment",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000059",
+      "cccc00000000000000000060",
+      "cccc00000000000000000061",
+      "cccc00000000000000000062",
+      "cccc00000000000000000063",
+      "cccc00000000000000000064",
+      "cccc00000000000000000065"
+    ],
+    "skills": [
+      "bbbb00000000000000000036",
+      "bbbb00000000000000000037",
+      "bbbb00000000000000000038"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fd1",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000014",
+    "name": "GitBasics",
+    "status": "Active",
+    "description": "In introduction to git.",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000066",
+      "cccc00000000000000000067"
+    ],
+    "skills": [
+      "bbbb00000000000000000039",
+      "bbbb00000000000000000040",
+      "bbbb00000000000000000041"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fd2",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000015",
+    "name": "Intermediate HTML",
+    "status": "Active",
+    "description": "Intermediate HTML Concepts",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000068",
+      "cccc00000000000000000069",
+      "cccc00000000000000000070",
+      "cccc00000000000000000071"
+    ],
+    "skills": [
+      "bbbb00000000000000000042",
+      "bbbb00000000000000000043",
+      "bbbb00000000000000000044"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fd3",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  },
+  {
+    "collection": "topics",
+    "_id": "aaaa00000000000000000016",
+    "name": "Intermediate CSS",
+    "status": "Active",
+    "description": "Intermediate CSS Concepts",
+    "category": "Foundations of ITSM",
+    "resources": [
+      "cccc00000000000000000072",
+      "cccc00000000000000000073",
+      "cccc00000000000000000074",
+      "cccc00000000000000000075",
+      "cccc00000000000000000076",
+      "cccc00000000000000000077",
+      "cccc00000000000000000078",
+      "cccc00000000000000000079",
+      "cccc00000000000000000080",
+      "cccc00000000000000000081"
+    ],
+    "skills": [
+      "bbbb00000000000000000045",
+      "bbbb00000000000000000046",
+      "bbbb00000000000000000047"
+    ],
+    "lastSaved": {
+      "atTime": "2024-04-03T18:17:58.000Z",
+      "byUser": "000000011d5af9c1231d8fd4",
+      "fromIp": "192.168.1.39",
+      "correlationId": "ae078031-7de2-4519-bcbe-fbd5e72b69d3"
+    }
+  }
+]
